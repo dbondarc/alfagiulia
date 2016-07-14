@@ -459,6 +459,12 @@ window.onload = function() {
         resizeAll();
     });
 
+    $(window).load(function() {
+       setInterval(function(){
+           $(".loader").fadeOut(300);
+           $('#ag-vid-slider').fadeIn(300);
+       },2000);
+    });
 
     window.requestAnimFrame=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)};
 
