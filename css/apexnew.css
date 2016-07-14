@@ -1,0 +1,74 @@
+@font-face { 
+  font-family: 'apexnew-book';
+  src: url('../fonts/apexnew-book.otf') format('opentype');
+}
+
+@font-face { 
+  font-family: 'apexnew-bold';
+  src: url('../fonts/apexnew-bold.otf') format('opentype');
+}
+
+@font-face { 
+  font-family: 'apexnew-heavy';
+  src: url('../fonts/apexnew-heavy.otf') format('opentype');
+}
+
+/*
+@font-face {
+  font-family: 'robotothin';
+  src: url("fonts/ApexNewWeb-Light.eot");
+  src: url("fonts/ApexNewWeb-Light.eot?#iefix") format('embedded-opentype'), url("fonts/ApexNewWeb-Light.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotolight';
+  src: url("fonts/ApexNewWeb-Light.eot");
+  src: url("fonts/ApexNewWeb-Light.eot?#iefix") format('embedded-opentype'), url("fonts/ApexNewWeb-Light.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("fonts/ApexNewWeb-Book.eot");
+  src: url("fonts/ApexNewWeb-Book.eot?#iefix") format('embedded-opentype'), url("fonts/ApexNewWeb-Book.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+[class*="apexnewbook"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+  color:#000;
+}
+
+[class*="apexnewheavy"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+  color:#000;
+}
+
+[class*="apexnewbold"]:before {
+  font-family: "apexnew-bold";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+.jethose-thumb-up:before {
+  content: "\f002";
+}
