@@ -10,6 +10,11 @@
     font-family: 'apexnew-heavy';
     src: url('../fonts/apexnew-heavy.otf') format('opentype');
 }
+/* preload large images */
+body:after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content: url(../img/00_main_red_bg.jpg) url(../img/00_main_blue_bg.jpg) url(../img/00_main_green_bg.jpg) url(../img/main_gr.png);
+}
 #scroll-tip {
     display:none !important;
 }
