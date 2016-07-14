@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 00 MAIN MENU */
+
+.mainTitleText {
+	font-family: Apex New Book;
+	font-size: 24px;
+	color: #fff;
+	opacity: 70%;
+}
+
+.mainTitleText:hover {
+	opacity: 100%;
+}
+
+/* 01 LAUNCH FILM */
+
+.homeButton {
+	width: 58px;
+	height: 58px;
+	background:url(NAV_Home.png);
+	margin-top: 62px;
+	margin-left: 82px;
+}
+
+.nextButton {
+	width: 58px;
+	height: 58px;
+	background:url(NAV_Next.png);
+	margin-bottom: 120px;
+	margin-right: 82px;
+}
+
+/* 02 VISUALIZE MENU */
+
+.subTitleText {
+	font-family: Apex New Book;
+	font-size: 30px;
+	color: #fff;
+	opacity: 60%;
+}
+
+.subTitleText:hover {
+	opacity: 100%;
+}
+
+.02ImageOverlay {
+	background:url(GLOBAL_Grad_Overlay_Tile_Vertical.png) repeat-y;  /* Only on hover */
+}
+
+.playButton {
+	background:url(NAV_Play.png);
+	margin-left: 50px;
+	opacity:60%;
+}
+
+.playButton:hover {
+	opacity: 100%;
+}
+
+.02ColorVisualizerBG {
+	background-image:url(02_VISUALIZE_COLOR_BG.jpg);
+}
+
+.02ConfiguratorBG {
+	background-image:url(02_VISUALIZE_COLOR_BG.jpg);
+}
+
+/* 02B CONFIGURATOR */
+
+.configSectionTitle {
+	font-family:Apex New Book;
+	font-size: 24px;
+	color:#fff;
+}
+
+.configSwatchTitle {
+	font-family:Apex New Book;
+	font-size: 10px;
+	color:#fff;
+}
+
+.configMainWrapper {	/* Slides out from the right side of screen */
+	width: 23.3%;
+	background-color:#000;
+	opacity: 50%;
+	margin-top: 3.333%;
+}
+
+/* 03 DEEP DIVES MENU */
+
+.03DD1SplitterBG {
+	background-image:url(05_DEEPDIVE_01_Splitter_BG.jpg);
+	margin-top: 0;
+}
+
+.03DD2EngineBG {
+	background-image:url(05_DEEPDIVE_02_Engine_BG.jpg);
+	margin-top: 300px;
+}
+
+.03DD3BodyBG {
+	background-image:url(05_DEEPDIVE_03_Body_BG.jpg);
+	margin-top: 300px;
+}
+
+

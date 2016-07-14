@@ -1,0 +1,394 @@
+.video-container,
+.video-container {
+    margin: 0;
+    padding: 0
+}
+
+#debug-console {
+    display: none
+}
+
+body.mobile #video-container {
+    display: none !important
+}
+
+body.mobile #mobile-video-container {
+    z-index: 9999;
+    display: block
+}
+
+body.mobile .video-container video {
+    display: none
+}
+
+body.mobile .video-container.deep-dives video#deep-dives-mobile-video,
+body.mobile .video-container.colorizer video#colorizer-mobile-video,
+body.mobile .video-container.visualizer video#visualizer-mobile-video {
+    display: block
+}
+
+body.debug body.mobile #debug-console {
+    display: block
+}
+
+body.debug #debug-console,
+body.debug #debug-console textarea {
+    z-index: 99995
+}
+
+body.debug #debug-console textarea {
+    width: 100%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: block;
+    background: rgba(255, 255, 255, 0.9)
+}
+
+body.debug #debug-console input[type=button] {
+    border: none;
+    background: #336699;
+    color: #fff;
+    padding: 5px;
+    z-index: 99999;
+    text-transform: uppercase;
+    left: 5px;
+    top: 5px;
+    position: fixed;
+    display: block
+}
+
+body:not(.mobile) #mobile-video-container {
+    display: none !important
+}
+
+body:not(.mobile) .video-container video,
+body:not(.mobile) .video-container audio {
+    display: none
+}
+
+body:not(.mobile) .video-container.loaded.playing video.playing:not(.baseVideo) {
+    display: block;
+    z-index: 15
+}
+
+body:not(.mobile) .video-container.playing .play-button {
+    display: none
+}
+
+body:not(.mobile) .video-container:not(.playing):not(.loaded)::before {
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat
+}
+
+body:not(.mobile) .video-container:not(.playing):not(.loaded)>video:not(.playing) {
+    display: none
+}
+
+body:not(.mobile) #info-popup {
+    display: none;
+    font-family: "apexnew-book";
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    z-index: 99999;
+    text-transform: uppercase
+}
+
+body:not(.mobile) #video-container #info-popup {
+    display: none
+}
+
+body:not(.mobile) .video-container:not(.loaded):not(.playing) #info-popup,
+body:not(.mobile) #info-popup.popup-visualizer #popup-colorizer,
+body:not(.mobile) #info-popup.popup-visualizer #popup-deep-dives,
+body:not(.mobile) #info-popup.popup-colorizer #popup-deep-dives,
+body:not(.mobile) #info-popup.popup-colorizer #popup-visualizer,
+body:not(.mobile) #info-popup.popup-deep-dives #popup-colorizer,
+body:not(.mobile) #info-popup.popup-deep-dives #popup-visualizer {
+    display: none
+}
+
+body:not(.mobile) #video-container.loaded:not(.playing) #info-popup {
+    display: none;
+    opacity: 1
+}
+
+body:not(.mobile) #video-container.loaded.playing #info-popup {
+    display: block
+}
+
+body:not(.mobile) #video-container.launch #info-popup {
+    display: none !important
+}
+
+body:not(.mobile) #video-container.visualizer #info-popup {
+    cursor: pointer
+}
+
+body:not(.mobile) #info-popup .info-popup {
+    background: rgba(255, 255, 255, 0.8);
+    font-size: .9em;
+    padding: 20px;
+    color: #222
+}
+
+body:not(.mobile) #info-popup .info-popup:hover {
+    background: white
+}
+
+body:not(.mobile) #info-popup #popup-visualizer i.fa {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+body:not(.mobile) #video-container #pause-play {
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    z-index: 99999;
+    bottom: 5%;
+    left: 5%;
+    display: none
+}
+
+body:not(.mobile) #video-container:not(.paused) #pause-play {
+    background: url('../img/NAV_Pause_VISUALIZER.png') no-repeat
+}
+
+body:not(.mobile) #video-container.paused #pause-play {
+    background: url('../img/NAV_Play_VISUALIZER.png') no-repeat
+}
+
+body:not(.mobile) #video-container:not(.loaded) #pause-play {
+    display: none
+}
+
+body:not(.mobile) #video-container #day-night {
+    display: none;
+    color: #FFF;
+    padding: 10px
+}
+
+body:not(.mobile) #video-container.loaded.playing.visualizer #day-night {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 200px;
+    z-index: 99999;
+    margin-left: -160px
+}
+
+body:not(.mobile) #video-container #day-night i {
+    opacity: .5;
+    font-size: 16pt
+}
+
+body:not(.mobile) #video-container.odd #day-night i.fa-moon-o,
+body:not(.mobile) #video-container.even #day-night i.fa-sun-o {
+    opacity: 1
+}
+
+body:not(.mobile) #video-container #day-night i.fa-sun-o::after,
+body:not(.mobile) #video-container #day-night i.fa-moon-o::after {
+    padding-left: 5px;
+    margin-right: 10px;
+    font-family: "apexnew-book"
+}
+
+body:not(.mobile) #video-container #day-night i.fa-sun-o {
+    margin-right: 50px
+}
+
+body:not(.mobile) #video-container #day-night i.fa-moon-o {
+    margin-left: 50px
+}
+
+body:not(.mobile) #video-container .video-wrapper,
+body:not(.mobile) #video-container .video-wrapper video {
+    width: 100% !important;
+    cursor: pointer;
+    z-index: 9999
+}
+
+body:not(.mobile) #video-container.colorizer .wrapper-colorizer,
+body:not(.mobile) #video-container.colorizer .wrapper-colorizer video {
+    display: none
+}
+
+body:not(.mobile) #video-container.colorizer.selector .video-wrapper.wrapper-colorizer,
+body:not(.mobile) #video-container.colorizer.selector .video-wrapper.wrapper-colorizer video {
+    display: block
+}
+
+body.youtube .video-container .yt-video {
+    display: none;
+    width: 100% !important;
+    height: 100% !important
+}
+
+body.youtube .video-container.visualizer.night #yt-night,
+body.youtube .video-container.visualizer:not(.night) #yt-day,
+body.youtube .video-container.deep-dives .yt-video,
+body.youtube .video-container.colorizer .yt-video,
+body.youtube .video-container.launch .yt-video {
+    display: block
+}
+
+body.youtube .video-container.deep-dives #info-popup,
+body.youtube .video-container.colorizer #info-popup {
+    display: none !important
+}
+
+body.youtube .video-container.playing #loader {
+    display: none
+}
+
+body.youtube .video-container:not(.colorizer) #overlay-wrapper {
+    display: none !important
+}
+
+body.youtube #mobile-video-container.video-container .video-wrapper {
+    display: none
+}
+
+body.youtube #mobile-video-container #loader {
+    display: none
+}
+
+body.youtube .video-container.colorizer.selected #loader {
+    display: block
+}
+
+body.youtube .video-container:not(.playing) {
+    overflow: hidden
+}
+
+body.youtube .video-container:not(.playing) #overlay-wrapper {
+    display: block
+}
+
+body.youtube .video-container:not(.playing) .selection {
+    display: block;
+    float: left;
+    min-width: 0 !important;
+    width: 25%;
+    height: 50%;
+    background-size: cover;
+    opacity: 1;
+    z-index: 9999;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer
+}
+
+body.youtube .video-container:not(.playing) .selection img {
+    visibility: hidden;
+    width: 100%
+}
+
+body.youtube .video-container:not(.playing) .selection #overlay-caption {
+    cursor: default;
+    position: relative
+}
+
+body.youtube .video-container:not(.playing) .selection #overlay-caption:hover img {
+    visibility: hidden
+}
+
+body.youtube .video-container:not(.playing) .selection #overla1y-caption:before {
+    text-align: center;
+    padding: .8em;
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    content: 'CHOOSE YOUR COLOR';
+    font-size: 1.5em;
+    font-family: "apexnew-book";
+    color: #222
+}
+
+body.youtube .video-container:not(.playing) .selection:hover {
+    background: transparent
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: relative
+}
+
+.video-container video,
+.video-container audio {
+    width: 100%;
+    height: 100%;
+    z-index: 999
+}
+
+#s6 figure {
+    height: 100%
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+
+@media (max-width:768px) and (orientation:landscape) {
+	body.youtube #overlay-wrapper {
+	    display: none;
+	    background: url(../img/AlfaRomeo_ETC_Menu_Mobile_Landscape.jpg) no-repeat;
+	    background-size: 100% 100%;
+	    width: 100%;
+	    height: 100%;
+	    margin: auto
+	}
+}
+
+@media (max-width:768px) and (orientation:portrait) {
+	body.youtube #overlay-wrapper {
+	    display: none;
+	    background: url(../img/AlfaRomeo_ETC_Menu_Mobile_Portrait.jpg) no-repeat;
+	    background-size: 100% 100%;
+    	width: 60%;
+	    height: 100%;
+	    margin: auto
+	}
+}
+
+@media (min-width:769px) and (max-width:1280px) and (orientation:landscape) {
+	body.youtube #overlay-wrapper {
+	    display: none;
+	    background: url(../img/AlfaRomeo_ETC_Menu_Mobile_Landscape.jpg) no-repeat;
+	    background-size: 100% 100%;
+	    width: 100%;
+	    height: 100%;
+	    margin: auto
+	}
+}
+
+@media (min-width:769px) and (max-width:800px) and (orientation:portrait) {
+	body.youtube #overlay-wrapper {
+	    display: none;
+	    background: url(../img/AlfaRomeo_ETC_Menu_Mobile_Portrait.jpg) no-repeat;
+	    background-size: 100% 100%;
+    	width: 60%;
+	    height: 100%;
+	    margin: auto
+	}
+}
+
+/*# sourceMappingURL=configurator.css.map */

@@ -1,0 +1,7300 @@
+@charset "utf-8";
+/* CSS Document */
+/* LESS Document */
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/ApexNewWeb-Medium.eot");
+  src: url("../fonts/ApexNewWeb-Medium.eot?#iefix") format('embedded-opentype'), url("../fonts/ApexNewWeb-Medium.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  /* url("fonts/apexOk/ApexNewWeb-Medium.ttf") format('truetype'),
+         url("fonts/apexOk/ApexNewWeb-Medium.svg#robotobold") format('svg');*/
+}
+@font-face {
+  font-family: 'robotothin';
+  src: url("../fonts/ApexNewWeb-Light.eot");
+  src: url("../fonts/ApexNewWeb-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/ApexNewWeb-Light.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  /*url("fonts/apexOk/ApexNewWeb-Light.ttf") format('truetype'),
+         url("fonts/apexOk/ApexNewWeb-Light.svg#robotothin") format('svg');*/
+}
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/ApexNewWeb-Light.eot");
+  src: url("../fonts/ApexNewWeb-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/ApexNewWeb-Light.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  /* url("fonts/apexOk/ApexNewWeb-Light.ttf") format('truetype'),
+         url("fonts/apexOk/ApexNewWeb-Light.svg#robotolight") format('svg');*/
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/ApexNewWeb-Book.eot");
+  src: url("../fonts/ApexNewWeb-Book.eot?#iefix") format('embedded-opentype'), url("../fonts/ApexNewWeb-Book.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  /*  url("fonts/apexOk/ApexNewWeb-Book.ttf") format('truetype'),
+         url("fonts/apexOk/ApexNewWeb-Book.svg#robotoregular") format('svg');*/
+}
+@font-face {
+  font-family: 'dollaro';
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto-Light-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  /*  url("fonts/apexOk/ApexNewWeb-Book.ttf") format('truetype'),
+         url("fonts/apexOk/ApexNewWeb-Book.svg#robotoregular") format('svg');*/
+}
+@font-face {
+  font-family: 'dollarobold';
+  src: url("../fonts/Roboto-Medium-webfont.eot");
+  src: url("../fonts/Roboto-Medium-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/Roboto-Medium-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  /*  url("fonts/apexOk/ApexNewWeb-Book.ttf") format('truetype'),
+         url("fonts/apexOk/ApexNewWeb-Book.svg#robotoregular") format('svg');*/
+}
+html,
+body {
+  height: 100%;
+  background: #000;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: 'robotoregular';
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  font-family: 'robotothin';
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nopad {
+  padding-left: 0;
+  padding-right: 0;
+}
+img.fullwidth {
+  display: block;
+  width: 100%;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+/*  color: #000;*/
+  outline: none;
+}
+span.indent {
+  display: block;
+  padding-left: 20px;
+}
+/************************************************************NAVIGATION************************************************************************/
+.globalWrapper {
+  height: 100%;
+}
+.primaryNavContainer {
+  z-index: 99999;
+  width: 100%;
+}
+.primaryNav {
+  background: #FFF;
+  overflow: hidden;
+  height: 60px;
+  position: relative;
+}
+.logoAlfa {
+  width: 60px;
+  height: 60px;
+  display: block;
+  box-sizing: border-box;
+  background: url("https://www.alfaromeousa.com/css/../img/header/alfaromeo.png") center center no-repeat;
+  background-size: 50px;
+}
+.callNav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+video.fullwidth {
+  width: 100%;
+}
+.callNav a {
+  display: block;
+  float: left;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #FFF;
+  font-family: 'robotoRegular';
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.callNav a.call span {
+  display: none;
+}
+.callNav a.call {
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center center;
+}
+.callNav a.build {
+  margin-right: 1px;
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/build.svg");
+}
+.callNav a.findDealer {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/finddealer.svg");
+  background-size: 16px;
+}
+.callNav a.searchHeader {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/searchowned.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 1px;
+}
+.navigationLinks {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 91px;
+  right: 180px;
+}
+.navigationLinks ul {
+  overflow: hidden;
+}
+.navigationLinks ul li {
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  width: 25%;
+}
+.navigationLinks ul li a {
+  display: block;
+  font-family: 'robotoregular';
+  color: #000;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 80px;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  font-size: 12px;
+}
+.navigationLinks ul li.selected a {
+  border-bottom: 3px solid #8f0c25;
+}
+.navigationLinks ul li.menuOpen a {
+  background: #000;
+  color: #FFF;
+}
+/*<--CLASSE TASTI PER MENU APERTO---*/
+.navigationLinks ul li a span {
+  display: block;
+  left: 0;
+  height: 3px;
+  bottom: 1px;
+  background: #8f0c25;
+  position: absolute;
+  transition: right, 0.5s;
+}
+.navigationLinks ul li.selected a span {
+  right: 0;
+}
+/*MOBILE ONLY NAVIGATION*/
+.mobileNavigation {
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+.mobileNavigation .navbar-toggle .icon-bar {
+  background: #363636;
+}
+.mobileNavigation .navbar-toggle {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  padding-left: 19px;
+}
+/*************************SLIDER*********************************************/
+.sliderContainer {
+  position: relative;
+}
+.fill {
+  width: 100%;
+}
+.fill img {
+  width: 100%;
+  /*height: 100%;*/
+}
+
+.carousel-indicators li {
+  width: 18px;
+  border-radius: 0;
+  height: 5px;
+  transition: background, 0.5s;
+  z-index: 1;
+}
+.carousel-indicators .active {
+  width: 18px;
+  height: 5px;
+  margin: 1px;
+}
+.carousel-caption h3 br {
+  display: none;
+}
+.carousel-caption {
+  position: inherit;
+  background: #000;
+  bottom: inherit;
+  left: inherit;
+  right: inherit;
+  padding-bottom: 40px;
+  height: 140px;
+  box-sizing: content-box;
+  width: 100%;
+}
+.carousel-caption h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'robotolight';
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.newsSlide.mobile .carousel-caption h2 {
+  text-transform: none;
+  font-size: 15px;
+  padding: 0 30px;
+}
+.carousel-caption h3 {
+  font-size: 20px;
+  line-height: 23px;
+  font-family: 'robotothin';
+  font-weight: normal;
+  padding: 0 30px;
+  margin: 0;
+}
+.carousel-control .icon-prev:before {
+  content: '';
+}
+.carousel-control .icon-next:before {
+  content: '';
+}
+.carousel-control .icon-prev {
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/left.svg") center center no-repeat;
+  background-size: 12px;
+  z-index: 10;
+}
+.carousel-control .icon-next {
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right.svg") center center no-repeat;
+  background-size: 12px;
+  z-index: 10;
+}
+.buttonAr {
+  display: inline-block;
+  padding: 7px 15px;
+  font-family: 'robotolight';
+  letter-spacing: 1px;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: none;
+  margin: 10px auto;
+  text-align: center;
+  min-width: 220px;
+  margin-bottom: 0;
+}
+.body-canada-fr .buttonAr {
+  width: 280px;
+}
+.buttonAr.bianco {
+  background: #FFF;
+}
+.buttonAr.nero {
+  background: #000;
+  color: #FFF;
+}
+.carousel-indicators {
+  bottom: 0px;
+  z-index: 1;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  bottom: 88px;
+  top: auto;
+}
+.fill video {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.pattern {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("https://www.alfaromeousa.com/css/../img/slideshowHome/pattern_spider.png");
+}
+.omare {
+  font-size: 10px;
+}
+/*************************FOLLOWUP HOME*********************************************/
+.followUplineWrapper {
+  overflow: hidden;
+  background: #efefef;
+}
+.buttonFollowContainer {
+  display: table;
+  width: 100%;
+  padding: 20px 10px;
+  background: #efefef;
+  box-sizing: border-box;
+  border-right: 1px solid #e1e1e1;
+  transition: background, 0.5s;
+  cursor: pointer;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+.buttonFollowContainer span.column,
+.buttonFollowContainer span.IconColumn {
+  display: table-cell;
+  vertical-align: middle;
+  height: 30px;
+}
+.buttonFollowContainer span.column {
+  padding: 0 5px;
+}
+.buttonFollowContainer span.column.IconColumn {
+  padding: 0 5px 0 0;
+  width: 35px;
+}
+.carousel-control {
+  opacity: 1;
+  z-index: 10;
+}
+span.iconTonda {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+span.iconTonda.signUp {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/updates.svg");
+  background-size: 18px;
+}
+span.iconTonda.getBrochure {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/brochure.svg");
+  background-size: 15px;
+}
+span.iconTonda.findDealer {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/finddealer.svg");
+  background-size: 13px;
+}
+span.iconTonda.buildIcon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/build.svg");
+}
+span.iconTonda.testDriveIcon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/testdrive.svg");
+  background-size: 20px;
+}
+span.iconTonda.searchInventoryIcon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/inventory.svg");
+  background-position: 8px 4px;
+}
+span.iconTonda.mailIcon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/getaquote.svg");
+}
+span.titoloTasto {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 11px;
+  letter-spacing: 0;
+  display: block;
+  font-family: 'robotoregular';
+}
+span.testoTasto {
+  color: #000;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: block;
+  font-family: 'robotoregular';
+  display: none;
+  padding-right: 30px;
+}
+span.iconTonda.storeIcon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/store.svg");
+  background-size: 26px;
+}
+/*********************************SHOPPING TOOLS MENU******************************************************/
+.shoppingMegamenu h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'robotoregular';
+  text-align: center;
+  margin-top: 30px;
+}
+.followupMega {
+  margin: 30px 0 15px;
+  padding: 0;
+}
+.followupMega li {
+  border-bottom: 1px solid #e1e1e1;
+  margin-right: 30px;
+}
+.followupMega li:last-child {
+  border-bottom: none;
+}
+.followupMega li a:hover{
+    background-color: #e1e1e1;
+}
+/*a.followButtons:hover {*/
+    /**/
+/*}*/
+
+a.followButtons {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'robotoregular';
+  padding: 20px 20px 20px 70px;
+  background-repeat: no-repeat;
+  background-position: 30px center;
+  transition: background-color, 0.5s;
+}
+a.followButtons.buildandprice {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/build.svg");
+  background-size: 20px;
+}
+a.followButtons.comparemodels {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/compare.svg");
+  background-size: 24px;
+}
+a.followButtons.competitivecompare {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/compare.svg");
+  background-size: 24px;
+}
+a.followButtons.getabrochure {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/brochure.svg");
+  background-size: 20px;
+}
+a.followButtons.signupforupdates {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/updates.svg");
+  background-size: 24px;
+}
+a.followButtons.findadealer {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/finddealer.svg");
+  background-size: 17px;
+}
+a.followButtons.searchnewinventory {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/inventory.svg");
+  background-size: 21px;
+}
+a.followButtons.scheduletestdrive {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/testdrive.svg");
+  background-size: 24px;
+}
+a.followButtons.searchpreownedvehicles {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/searchowned.svg");
+  background-size: 19px;
+}
+a.followButtons.viewincentives {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/incentives.svg");
+  background-size: 14px;
+}
+a.followButtons.paymentcalculator {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/calculator.svg");
+  background-size: 17px;
+}
+a.followButtons.getaquote {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/getaquote.svg");
+  background-size: 21px;
+}
+a.followButtons.applyforcredit {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/credit.svg");
+  background-size: 24px;
+}
+a.followButtons.tradeinvalue {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/tradeinvalue.svg");
+  background-size: 36px;
+  background-position: 20px center;
+}
+a.followButtons.store {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/store.svg");
+  background-size: 26px;
+  background-position: 30px 11px;
+}
+a.followButtons:hover {
+  background-color: #FFF;
+}
+a.thNews {
+  display: block;
+  margin-right: 1px;
+}
+a.thNews img {
+  width: 100%;
+}
+.textContainerNewsMegamenu {
+  padding: 20px;
+  margin-right: 1px;
+  background: #FFF;
+}
+p.dataNews {
+  font-family: 'robotobold';
+  letter-spacing: 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.textContainerNewsMegamenu h2 {
+  font-family: 'robotoregular';
+  font-size: 16px;
+  margin-bottom: 0;
+  line-height: 22px;
+}
+.textContainerNewsMegamenu a.readMore {
+  display: inline-block;
+  color: #000;
+  padding: 10px 20px 10px 0;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") right center no-repeat;
+  background-size: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-family: 'robotoregular';
+  margin-top: 10px;
+  cursor: pointer;
+}
+/*************************************MOBILE NAV*********************************************/
+.navbar-collapse {
+  background: #efefef;
+}
+.mobileNav .panel-group {
+  margin: 0px;
+}
+.mobileNav .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+.mobileNav .panel-primary > .panel-heading {
+  background: none;
+  padding: 15px 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.mobileNav .panel-primary > .panel-heading.last {
+  border-bottom: none;
+}
+.mobileNav .panel-primary {
+  border: none;
+  border-radius: 0;
+}
+.mobileNav .panel-heding {
+  padding: 25px 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.mobileNav .panel-heding:last-child {
+  border-bottom: none;
+}
+.mobileNav .panel {
+  background: none;
+  box-shadow: none;
+}
+.mobileNav .panel-title {
+  font-family: 'robotoregular';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.mobileNav .subs a {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'robotoregular';
+  padding: 10px 15px;
+  border-bottom: solid 1px #e1e1e1;
+  background-color: #e7e7e7;
+}
+.mobileNav .panel-title a {
+  display: block;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/down.svg") right center no-repeat;
+  background-size: 15px;
+}
+.mobileNav .subs a:last-child {
+  border-bottom: none;
+}
+.mobileNav .shoppingSubMenu.subs a {
+  padding-left: 50px;
+  background-position: 10px center;
+}
+.mobileNav .subs a.accordion-toggle {
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/down.svg") 96% center no-repeat #e7e7e7;
+  background-size: 10px;
+}
+.mobileNav .subs .terzolivello a {
+  background-color: #E1E1E1;
+  border-bottom: #e7e7e7 1px solid;
+}
+.panel-group.submenu {
+  overflow-y: auto;
+}
+/*****************************************************HOME PAGE******************************************************/
+/************MODULO DA 3 SOTTO SLIDESHOW***********************************/
+.modul3Row a.squareBanner {
+  display: block;
+  border-bottom: 1px solid #FFF;
+  position: relative;
+}
+.modul3Row .col-md-4:last-child a.squareBanner {
+  border-right: none;
+}
+.modul3Row a.squareBanner img {
+  width: 100%;
+  display: block;
+}
+.modul3Row a.squareBanner span {
+  color: #FFF;
+}
+.modul3Row a.squareBanner span.textContainer {
+  display: block;
+  top: 30px;
+  left: 30px;
+  position: absolute;
+  right: 30px;
+  text-align: center;
+}
+a.squareBanner span.textContainer span.titolo {
+  display: block;
+  font-family: 'robotoregular';
+  font-size: 30px;
+  line-height: 40px;
+}
+a.squareBanner span.textContainer span.titolo strong {
+  font-weight: normal;
+}
+a.squareBanner span.textContainer span.testo {
+  display: block;
+  font-family: 'robotoregular';
+  font-size: 12px;
+}
+a.squareBanner span.textContainer span.discover {
+  padding-right: 20px;
+  font-family: robotoregular;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right-small.svg") right center no-repeat;
+  background-size: 6px;
+  color: #FFF;
+  margin-top: 15px;
+  display: inline-block;
+}
+.carousel-caption {
+  text-shadow: none !important;
+}
+/*************************SLIDER STORICO*******************************************/
+.carousel-caption.centerJustifyCaption {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: auto;
+  height: 250px;
+}
+.carousel-caption.centerJustifyCaption .buttonAr {
+  width: 200px;
+  margin: 10px auto;
+}
+.carousel-caption.centerJustifyCaption h2 {
+  letter-spacing: 0;
+  font-family: 'robotolight';
+  font-size: 13px;
+}
+.carousel-caption.centerJustifyCaption h3 {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.historySlide .carousel-control .glyphicon-chevron-left,
+.historySlide .carousel-control .glyphicon-chevron-right,
+.historySlide .carousel-control .icon-next,
+.historySlide .carousel-control .icon-prev {
+  bottom: 150px;
+}
+/************************ALFAROMEO WORLD BLOCCOPAGINA***********************************************************/
+.alfaRomeoWorldBlock {
+  padding-top: 30px;
+  background: #ffffff;
+}
+h1.blockTitle {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+.tabContainer {
+  text-align: center;
+}
+.tabContainer .nav-pills > li {
+  width: 50%;
+}
+.tabContainer .nav-pills > li + li {
+  margin-left: 0;
+}
+.tabContainer ul.nav.nav-pills {
+  display: inline-block;
+  width: 100%;
+}
+.tabContainer .nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background: none;
+  color: #000;
+  border-bottom: 3px solid #8f0c25;
+}
+.tabContainer .nav-pills > li > a {
+  border-radius: 0;
+  font-family: 'robotoregular';
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #cccccc;
+  transition: border-color, 0.5s;
+}
+.tabContainer .nav-pills > li > a:hover {
+  border-bottom-color: #363636;
+}
+/***Blocco con immagine e testo in alto a sinistra**/
+a.imgTextLink {
+  display: block;
+  position: relative;
+  background: #000000;
+}
+a.imgTextLink img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.imgTextLink span.textContainer {
+  display: block;
+  top: 30px;
+  left: 30px;
+  position: absolute;
+  right: 30px;
+  color: #FFF;
+}
+a.imgTextLink span.textContainer span.titolo {
+  display: block;
+  font-family: 'robotoregular';
+  font-size: 30px;
+  line-height: 40px;
+}
+a.imgTextLink span.textContainer span.testo {
+  display: block;
+  font-family: 'robotoregular';
+  font-size: 12px;
+}
+a.imgTextLink span.textContainer span.discover {
+  padding-right: 20px;
+  font-family: robotoregular;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right-small.svg") right center no-repeat;
+  background-size: 6px;
+  color: #FFF;
+  margin-top: 15px;
+  display: block;
+  float: left;
+}
+.imgTextLink span.g {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/googleplus.svg");
+  background-size: 19px;
+  display: block;
+  padding-left: 30px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  color: #FFF;
+}
+/**********BLOCCO VIDEO***********************/
+a.videoLink {
+  display: block;
+  position: relative;
+  background: #000000;
+}
+a.videoLink img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+span.playVideo {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.7) url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/playVideo.svg") 12px center no-repeat;
+  background-size: 8px;
+  border-radius: 15px;
+  transition: background-color, 0.5s;
+}
+a.videoLink span.playVideo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+span.bottomSocial {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: block;
+  font-size: 12px;
+  font-family: 'robotolight';
+}
+span.bottomSocial.youtube {
+  color: #FFF;
+  padding-left: 40px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/youtube.svg") left center no-repeat;
+  background-size: 24px;
+}
+
+
+/***Tumblr BLOCK****/
+a.tumblrLink {
+  display: block;
+  position: relative;
+  background: #000000;
+}
+a.tumblrLink img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+span.bottomSocial.tumblr {
+  color: #FFF;
+  padding-left: 30px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/tumblr.png") left center no-repeat;
+  background-size: 20px;
+}
+
+/***BLOCCO FACEBOOK****/
+a.facebookLink {
+  display: block;
+  position: relative;
+  background: #000000;
+}
+a.facebookLink img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+span.bottomSocial.facebook {
+  color: #FFF;
+  padding-left: 30px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/facebook.svg") left center no-repeat;
+  background-size: 10px;
+}
+span.bottomSocial.twitter {
+  color: #8f0c25;
+  padding-left: 28px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/twitter.svg") left center no-repeat;
+  background-size: 26px;
+  font-size: 12px;
+}
+/*BLOCCO TWITTER*/
+a.twitterLink {
+  display: block;
+  position: relative;
+  background: #efefef;
+  transition: background, 0.5s;
+}
+a.twitterLink img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+span.textTwitter {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: 'robotolight';
+  color: #000;
+  display: block;
+  right: 10px;
+}
+span.textTwitter .data {
+  font-size: 11px;
+  display: block;
+  margin-bottom: 5px;
+}
+span.textTwitter .testo {
+  font-size: 12px;
+  display: block;
+}
+span.textTwitter .testo span.ash {
+  color: #8f0c25;
+  font-family: 'robotoregular';
+}
+/**INSTAGRAM*/
+a.instagramLink {
+  display: block;
+  position: relative;
+  background: #000000;
+}
+a.instagramLink img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity, 0.5s;
+}
+span.bottomSocial.instagram {
+  color: #FFF;
+  padding-left: 24px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/instagram.svg") left center no-repeat;
+  background-size: 18px;
+}
+span.bottomSocial.instagram span.timing {
+  display: block;
+  font-size: 14px;
+}
+/********************************************SCHEDA VETTURA************************************************/
+.carousel-caption p {
+  color: #FFF;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.schedaImg .buttonAr {
+  font-size: 11px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  width: 170px;
+}
+.schedaImg .carousel-caption {
+  height: auto;
+  padding-bottom: 20px;
+}
+span.clearfix {
+  display: block;
+}
+a.skyexperienceButton {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 10px 10px 10px 40px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/skyexperience.svg") left center no-repeat;
+  background-size: 32px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.schedaDatiMobile {
+  text-align: center;
+  color: #FFF;
+  padding: 15px 0;
+}
+.schedaDatiMobile h2 {
+  text-transform: uppercase;
+}
+.schedaDatiMobile span {
+  font-family: 'robotobold';
+}
+/******SEZIONI 50% immagine 50% testo****/
+.section.half {
+  background: #e1e1e1;
+  padding: 15px;
+}
+.section.half .row {
+  background: #FFF;
+}
+.section.black {
+  background: #000000;
+}
+.section.black .row {
+  background: #000;
+}
+.section .textContainer {
+  padding: 30px;
+}
+.section .textContainer h2 {
+  font-size: 23px;
+}
+.section .textContainer p {
+  margin: 20px 0;
+}
+.section .textContainer p strong {
+  font-family: 'robotobold';
+}
+.section .textContainer h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-family: 'robotobold';
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.section.black .textContainer {
+  color: #FFF;
+}
+.bgImageContainer .techData {
+  padding: 15px;
+}
+.rowData {
+  overflow: hidden;
+  padding: 20px 0;
+  border-top: 1px solid #666666;
+}
+.rowData .colData {
+  float: left;
+  font-family: 'robotolight';
+  text-transform: uppercase;
+  color: #FFF;
+}
+.rowData .colData.type {
+  font-size: 14px;
+  width: 100px;
+}
+.rowData .colData.numbers {
+  font-size: 40px;
+  font-family: 'robotothin';
+  line-height: 40px;
+  clear: left;
+}
+.rowData .colData.others {
+  font-size: 12px;
+}
+/*************************DATASHEET ACCORDION******************************************************************/
+.section.technicalData {
+  padding: 30px 30px 30px 30px;
+  background: #000;
+  text-align: center;
+}
+.technicalData h2 {
+  font-size: 30px;
+  color: #FFF;
+}
+.techAccordion {
+  margin-top: 30px;
+}
+.techAccordion .panel-heading {
+  padding: 15px;
+  background-color: #efefef;
+  border-radius: 0;
+  border: none;
+  font-family: 'robotoregular';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #000;
+  margin-top: 1px;
+}
+.techAccordion .panel {
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+.techAccordion .panel-title {
+  font-size: 13px;
+}
+.techAccordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top: none;
+  background: #FFF;
+}
+.techAccordion .rowData {
+  border-top: 1px solid #e1e1e1;
+}
+.techAccordion .rowData .colData {
+  color: #000;
+  text-align: left;
+}
+.techAccordion .rowData .colData.others {
+  text-transform: none;
+}
+.techAccordion .rowData .colData.others {
+  margin-left: 10px;
+}
+.techAccordion .rowData .colData.type {
+  text-transform: uppercase;
+}
+.buttonAr.download {
+  display: block;
+  font-family: 'robotobold';
+  letter-spacing: 1px;
+}
+.panel-body p {
+  margin-bottom: 8px;
+}
+.panel-body h3 {
+  font-family: 'robotobold';
+  font-weight: normal;
+  font-size: 17px;
+}
+/******************************LEASE BLOCK*********************************************/
+.lease .textContainer {
+  background: #000;
+  color: #FFF;
+}
+.section .textContainer .leaseFor {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'robotolight';
+  letter-spacing: 2px;
+  margin: 0;
+}
+.leasePriceContainer {
+  overflow: hidden;
+}
+.section .textContainer .leasePriceContainer h2 {
+  float: left;
+  font-size: 42px;
+}
+.section .textContainer .leasePriceContainer .dollar {
+  display: block;
+  float: left;
+  font-family: 'robotothin';
+  font-size: 20px;
+  line-height: 30px;
+}
+.section .textContainer .leasePriceContainer .detailPrice {
+  display: block;
+  float: left;
+  font-family: 'robotolight';
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+span.red {
+  color: #8f0c25;
+}
+.section.lease .textContainer p {
+  margin: 10px 0;
+}
+/****************************GALLERY***************************************************/
+.section.gallery {
+  background: #FFF;
+  text-align: center;
+  padding: 20px;
+}
+.section.gallery .row.tabContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section.gallery h2 {
+  font-size: 20px;
+}
+.gallerySlide.mobile .carousel-indicators {
+  color: #FFFFFF;
+  bottom: 0;
+}
+.gallerySlide.mobile .carousel-control .glyphicon-chevron-left,
+.gallerySlide.mobile .carousel-control .glyphicon-chevron-right,
+.gallerySlide.mobile .carousel-control .icon-next,
+.gallerySlide.mobile .carousel-control .icon-prev {
+  bottom: 50%;
+  margin-bottom: -20px;
+}
+.centraButton {
+  margin-top: 30px;
+  text-align: center;
+}
+/*************************************************************NEWSPAGE********************************************/
+.newsPage {
+  background: #efefef;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.newsPage h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+}
+.filterBy {
+  overflow: hidden;
+  margin: 15px -15px;
+}
+.filterBy form {
+  overflow: hidden;
+}
+.filterBy label {
+  display: block;
+  font-family: 'robotoregular';
+  font-size: 11px;
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: normal;
+  line-height: 37px;
+  text-align: center;
+}
+.filterBy select {
+  border: none;
+  font-family: 'robotoregular';
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #000;
+  padding: 10px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  height: 37px;
+  display: block;
+  margin-bottom: 20px;
+}
+.newsPage .newsTab {
+  padding: 0;
+  background: none;
+}
+a.imgContainer img {
+  width: 100%;
+}
+a.imgContainer {
+  position: relative;
+  display: block;
+}
+a.imgContainer span.playVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+.newsPage .newsTextContainer {
+  padding: 15px;
+  background: #ffffff;
+}
+.newsPage .primopiano .newsTextContainer {
+  background: #000;
+  color: #FFF;
+}
+.newsPage .newsBlock {
+  margin-bottom: 15px;
+}
+.newsPage .newsBlock .newsTextContainer h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.primopiano .newsTextContainer a.readMore {
+  color: #FFF;
+}
+.newsTextContainer a.readMore {
+  display: inline-block;
+  padding: 10px 20px 10px 0;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") 95% center no-repeat;
+  background-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-family: robotoregular;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background, 0.3s;
+}
+/***********************************HISTORY PAGE**********************************************************/
+.historyImgBg,
+.performanceImgBg {
+  background: #000;
+  color: #FFF;
+  text-align: center;
+}
+.historyImgBg h1,
+.performanceImgBg h1 {
+  font-size: 25px;
+}
+.historyImgBg p {
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.historyImgBg .textContainer,
+.performanceImgBg .textContainer {
+  padding: 30px 15px;
+}
+.overviewIntro {
+  padding: 15px 15px;
+  background: #efefef;
+  text-align: center;
+}
+.overviewIntro .text {
+  overflow: hidden;
+  display: inline-block;
+}
+.overviewIntro .text .line {
+  float: left;
+  height: 1px;
+  background: #000;
+  width: 100px;
+  margin-top: 10px;
+}
+.overviewIntro .text .titolo {
+  float: left;
+  margin: 0 20px;
+  text-transform: uppercase;
+  font-family: 'robotolight';
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+.year {
+  color: #e1e1e1;
+  font-family: 'robotoregular';
+  font-size: 20px;
+}
+.historyData {
+  width: 90%;
+}
+p.historyIntro {
+  margin: 0 auto 20px;
+}
+.historyImgBg.innovation .textContainer p {
+  margin: 20px 0;
+}
+/**********************************DESIGNERS PAGE*****************************************************************/
+.designersPage h1 {
+  padding: 40px 15px;
+  text-align: center;
+  background: #efefef;
+  font-size: 25px;
+  color: #000;
+  letter-spacing: 2px;
+}
+.imgContainerDesigner .textContainer {
+  color: #FFF;
+  padding: 15px;
+}
+.imgContainerDesigner .textContainer h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding: 10px 0;
+}
+.imgContainerDesigner .textContainer p {
+  font-size: 16px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  font-family: 'robotoregular';
+}
+.imgContainerDesigner .textContainer p span.anno {
+  display: block;
+  font-family: 'robotobold';
+  float: left;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: solid 1px #8f0c25;
+}
+.imgContainerDesigner .textContainer p span.testo {
+  float: left;
+  text-transform: uppercase;
+}
+.designerData {
+  position: relative;
+  background: #000;
+}
+.designerData .imgContainer {
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+.designerData .imgContainer img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.designerData .text {
+  font-family: 'robotoregular';
+  letter-spacing: 2px;
+  color: #FFF;
+}
+.designerData .text h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+.designerData .text p {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.designerBlock {
+  padding: 20px;
+}
+.designerBlock.border {
+  background: #efefef;
+}
+.border .imgContainerDesigner .textContainer {
+  color: #000;
+}
+.border .designerData {
+  background: none;
+}
+.border .designerData .text {
+  color: #000000;
+}
+/************************************ALL VEHICLES******************************************/
+.imgSmallMegaMenu .imageWrapper {
+  padding: 15px;
+  background: #FFF;
+  position: relative;
+}
+.imgSmallMegaMenu .imageWrapper img {
+  width: 100%;
+  padding: 10px 0 40px 0;
+  transition: opacity, 0.3s;
+}
+.imgSmallMegaMenu .imageWrapper img:hover {
+  opacity: 0.7;
+}
+.imageWrapper h3 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  margin: 0;
+  font-family: 'robotoregular';
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.imageWrapper a.discover {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding-right: 20px;
+  font-family: 'robotoregular';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") right center no-repeat;
+  background-size: 6px;
+}
+.followUpMegamenu {
+  overflow: hidden;
+  margin: 20px 0px 10px 25px;
+}
+.followUpMegamenu a {
+  display: block;
+  padding: 10px 0 10px 30px;
+  font-family: 'robotoregular';
+  font-size: 11px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.followUpMegamenu a.buildMega {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/build.svg");
+  background-size: 20px;
+}
+.followUpMegamenu a.testMega {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/testdrive.svg");
+  background-size: 25px;
+}
+.followUpMegamenu a.dealerMega {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/finddealer.svg");
+  background-size: 18px;
+}
+.followUpMegamenu a.getabrochure {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/brochure.svg");
+  background-size: 20px;
+}
+.followUpMegamenu a.store {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/store.svg");
+  background-size: 22px;
+}
+.norelative {
+  position: initial;
+}
+.followUpMegamenu a.signupforupdates {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/updates.svg");
+  background-size: 22px;
+}
+a.imgWrapperMegaMenu {
+  display: block;
+  margin: 15px;
+  position: relative;
+  transition: opacity, 0.3s;
+}
+.imgWrapperMegaMenu img {
+  width: 100%;
+}
+.imgWrapperMegaMenu .contenutoText {
+  text-align: center;
+  position: absolute;
+  display: block;
+  bottom: 20px;
+  width: 100%;
+}
+.imgWrapperMegaMenu .thTitle {
+  display: block;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  font-family: 'robotothin';
+  font-size: 30px;
+  line-height: 30px;
+}
+.imgWrapperMegaMenu .discoverTh {
+  display: inline-block;
+  color: #FFF;
+  padding: 10px 20px 10px 0;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") right center no-repeat;
+  background-size: 7px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-family: 'robotoregular';
+  margin-top: 5px;
+}
+a.titleCarMobile {
+  display: block;
+  padding: 15px;
+  font-size: 15px;
+  font-family: 'robotobold';
+  letter-spacing: 2px;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #FFF;
+  margin-bottom: 15px;
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right.svg");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 12px;
+}
+.allVehiclesPage {
+  background: #efefef;
+  padding: 10px;
+}
+.allVehiclesPage h1 {
+  padding: 40px 15px;
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  letter-spacing: 2px;
+}
+.allVehiclesPage .imgSmallMegaMenu {
+  background: none;
+  margin-bottom: 40px;
+  border-right: 2px solid #efefef;
+}
+.allVehiclesPage .followUpMegamenu {
+  border-top: 1px solid #efefef;
+  margin: 0 0px;
+  padding: 30px 10px;
+  background: #ffffff;
+}
+.allVehiclesPage .carDataMegaMenu {
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.allVehiclesPage .carDataMegaMenu p.etichetta {
+  font-size: 14px;
+  font-family: 'robotoregular';
+  padding: 0 10px;
+}
+.allVehiclesPage .carDataMegaMenu p.dato {
+  font-size: 14px;
+  font-family: 'robotobold';
+  letter-spacing: 0px;
+  padding: 0 10px;
+}
+.allVehiclesPage .carDataMegaMenu .col-xs-4 {
+  border-right: 1px solid #e1e1e1;
+}
+.allVehiclesPage .carDataMegaMenu .col-xs-4:last-child {
+  border-right: none;
+}
+.allVehiclesPage .followUpMegamenu a {
+  padding: 10px 10px 10px 40px;
+  background-position: 10px center;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 10px;
+  text-align: left;
+}
+.allVehiclesPage .followUpMegamenu {
+  padding: 10px 10px;
+}
+/*********************PERFORMANCE*************************************/
+.fullImageBg.section .textContainer {
+  background: #000;
+  color: #FFF;
+}
+.section.half.borderOnly .row {
+  background: #000000;
+}
+.section.half.borderOnly .textContainer {
+  color: #ffffff;
+}
+.fullImageBg.section.textDx .textContainer h1 {
+  font-size: 23px;
+}
+.fullImageBg span.playVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -33px;
+  margin-top: -33px;
+  cursor: pointer;
+}
+/**************************************ALFISTI TV****************************************/
+.newsBlock.tv span.playVideo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  cursor: pointer;
+}
+/***************************************OPTIONS*********************************************************************/
+.section.options.gallery {
+  background: #efefef;
+  padding: 20px;
+  text-align: center;
+}
+.optContainer {
+  margin-right: 1px;
+  background: #FFF;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.optContainer .text {
+  padding: 10px 15px;
+}
+.optContainer .text p {
+  text-transform: uppercase;
+  font-family: 'robotobold';
+  font-size: 12px;
+  color: #000000;
+}
+a.details {
+  display: inline-block;
+  font-family: 'robotoregular';
+  letter-spacing: 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-right: 15px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/down.svg") right center no-repeat;
+  background-size: 10px;
+}
+a.details.opened {
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/up.svg") right center no-repeat;
+}
+.detailedText {
+  background: #FFF;
+  margin-top: 15px;
+  display: none;
+}
+.text p.prezzo {
+  font-family: 'robotoregular';
+  font-size: 13px;
+  margin: 0 0 15px 0;
+}
+.text p.prezzo span {
+  font-family: 'robotobold';
+}
+.text p.description {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'robotoregular';
+  letter-spacing: 0;
+}
+.optContainer a.details {
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/more.svg") right center no-repeat;
+  background-size: 15px;
+  padding-right: 20px;
+}
+/************************************BUILD***************************************************/
+.pulsanteFullBuild .buttonAr {
+  display: block;
+  margin: 10px 20px 20px;
+}
+/****************STYLE MAKE*************************/
+.intromake {
+  position: relative;
+}
+.primologo {
+  top: 4%;
+  text-align: center;
+  color: #FFF;
+  width: 100%;
+}
+.primologo img {
+  width: 30%;
+  margin: 0 auto;
+}
+.primologo > h2 {
+  margin: 20px 15px;
+}
+.primologo > p {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0 15px;
+}
+.yearsStile {
+  overflow: hidden;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+.primologo .yearsStile img {
+  width: 60%;
+  display: inline-block;
+}
+.yearsStile p,
+.yearsStile h2 {
+  text-align: left;
+}
+.textleft .yearsStile img {
+  width: 60%;
+  margin: 0 auto;
+}
+.textleft .yearsStile {
+  overflow: hidden;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-right: 30px;
+  color: #ffffff;
+}
+.textleft .yearsStile {
+  margin-bottom: 40px;
+}
+.textleft .yearsStile p,
+.yearsStile h2 {
+  text-align: left;
+}
+/*****************************************************FOOTER******************************************************/
+.findYourCountry {
+  background: #363636;
+  text-align: center;
+  padding: 20px;
+}
+.findYourCountry h3 {
+  margin: 0;
+  padding: 10px 0 10px 40px;
+  color: #FFF;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: 'robotoregular';
+  text-transform: uppercase;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/country.svg") left center no-repeat;
+  background-size: 25px;
+  display: inline-block;
+}
+form.country {
+  overflow: hidden;
+  margin-top: 20px;
+}
+form.country select {
+  border: none;
+  font-family: 'robotoregular';
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000;
+  background: #efefef;
+  padding: 10px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  height: 37px;
+  display: block;
+  margin-bottom: 20px;
+}
+form.country input[type=submit] {
+  border: none;
+  font-family: 'robotoregular';
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #000;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  line-height: 38px;
+  transition: background,0.5s, color, 0.5s;
+  display: block;
+}
+form.country input[type=submit]:hover {
+  background: #111111;
+}
+.footerLinks {
+  background: #FFF;
+  padding: 20px 15px;
+  text-align: center;
+}
+.footerLinks h3 {
+  color: #000;
+  font-family: 'robotoregular';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 16px;
+  margin-top: 20px;
+}
+ul.listaFooter {
+  padding: 15px 0;
+}
+ul.listaFooter li {
+  margin: 10px 0;
+}
+ul.listaFooter li a {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #363636;
+  font-family: 'robotoregular';
+  letter-spacing: 2px;
+}
+.followFooter {
+  overflow: hidden;
+  margin: 15px 0;
+  display: inline-block;
+}
+.followFooter a {
+  display: block;
+  float: left;
+  margin-right: 15px;
+  width: 24px;
+  height: 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.followFooter a.facebookFooter {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/facebook.svg");
+  background-size: 8px;
+  width: 8px;
+}
+.followFooter a.twitterFooter {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/twitter.svg");
+  background-size: 20px;
+  width: 20px;
+}
+.followFooter a.youtubeFooter {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/youtube.svg");
+  background-size: 23px;
+  width: 23px;
+}
+.followFooter a.instagramFooter {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/instagram.svg");
+  background-size: 16px;
+  width: 16px;
+}
+.followFooter a.pinterestFooter {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/pinterest.svg");
+  background-size: 16px;
+  width: 16px;
+}
+.followFooter a.flickrFooter {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/flickr.svg");
+  background-size: 19px;
+  width: 19px;
+}
+.followFooter a.g {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/googleplus.svg");
+  background-size: 19px;
+  width: 19px;
+}
+.followFooter a.googleplusFooter {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/googleplus.svg");
+  background-size: 19px;
+  width: 19px;
+}
+.followFooter a.tumblrFooter {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/tumblr.png");
+  background-size: 19px;
+  width: 19px;
+}
+.footerPrivacy {
+  padding: 20px 15px;
+  background: #efefef;
+}
+.privacyList, .legalList {
+  overflow: hidden;
+}
+.privacyList li, .legalList li {
+  text-align: center;
+}
+.privacyList li a, .legalList li a {
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'robotoregular';
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+.privacyList li.automobility a {
+  width: 81px;
+  height: 20px;
+  background: url("https://www.alfaromeousa.com/css/../img/footer/automobility.png") center center no-repeat;
+}
+.footerPrivacy .legal {
+  float: right;
+  display: block;
+  font-size: 11px;
+  color: #000;
+  font-family: 'robotoregular';
+  letter-spacing: 2px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.spazioLoghi {
+  padding: 20px 15px;
+  background: #111111;
+  display: none;
+}
+.footerBottomText {
+  padding: 20px 15px;
+}
+.footerBottomText p {
+  font-family: 'robotoregular';
+  font-size: 11px;
+  color: #575757;
+  margin-bottom: 15px;
+  text-align: center;
+}
+/**********************************************************************************************************************************************************************************
+/**********************************************************************************************************************************************************************************
+/**********************************************************************************************************************************************************************************
+COLORIZER
+/***********************************************************************************************************************************************************************************/
+.disabledInterface {
+  opacity: 0.3;
+}
+.interFaceContainer {
+  text-align: center;
+  min-height: 170px;
+}
+.interfaceBlock {
+  display: inline-block;
+  padding: 10px 20px 0;
+}
+.nav-pills.colorizer {
+  display: inline-block;
+}
+.nav.nav-pills.colorizer > li > a:hover,
+.nav.nav-pills.colorizer > li > a:focus {
+  background: none;
+}
+.nav-pills.colorizer > li {
+  border-right: 1px solid #efefef;
+}
+.nav-pills.colorizer > li:last-child {
+  border-right: none;
+}
+.nav-pills.colorizer > li + li {
+  margin-left: 0;
+}
+.nav-pills.colorizer > li a {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: none;
+  font-family: 'robotobold';
+  color: #000;
+  padding: 10px 30px;
+}
+.nav-pills.colorizer > li.active > a,
+.nav-pills.colorizer > li.active > a:hover,
+.nav-pills.colorizer > li.active > a:focus {
+  background: none;
+  border-bottom: none;
+  position: relative;
+}
+.nav-pills.colorizer > li.active > a {
+  color: #8f0c25;
+}
+.nav-pills.colorizer > li.active > a:hover {
+  background: none !important;
+}
+.nav-pills.colorizer > li.active > a:hover {
+  background: none;
+  border: none;
+}
+.nav-pills.colorizer > li.active > a span {
+  display: block;
+  width: 14px;
+  height: 7px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/downFull.svg") center center no-repeat;
+  background-size: 14px;
+  position: absolute;
+  left: 50%;
+  margin-left: -7px;
+  bottom: 0;
+}
+.contentTabContainer {
+  text-align: center;
+  background: #FFF;
+  padding: 5px 0 0;
+}
+.thContainer {
+  display: inline-block;
+}
+.colorsTab .thContainer a {
+  display: block;
+  float: left;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 4px transparent;
+  cursor: pointer;
+  transition: border-color, 0.3s;
+  margin: 0 2px;
+}
+/*COLORS*/
+.colorsTab .thContainer a.selected,
+.colorsTab .thContainer a:hover {
+  border: solid 4px #e1e1e1;
+}
+.colorsTab .thContainer a span {
+  display: block;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin: 5px;
+  overflow: hidden;
+}
+.colorsTab .thContainer a span img {
+  width: 100%;
+}
+.colorsTab .thContainer a.pwc span {
+  border: 1px solid #cccccc;
+}
+/*WHEELS*/
+.wheelsTab .thContainer a,
+.brakesTab .thContainer a,
+.exhaustTab .thContainer a,
+.haloTab .thContainer a {
+  display: block;
+  float: left;
+  margin: 0 15px;
+  cursor: pointer;
+  position: relative;
+}
+.etichetteContainer {
+  margin-top: 10px;
+  font-family: 'robotoregular';
+  font-size: 14px;
+}
+.etichetteContainer span span {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.selectedPoint {
+  width: 6px;
+  height: 6px;
+  background: #8f0c25;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  bottom: -12px;
+  left: 50%;
+  margin-left: -3px;
+  opacity: 0;
+  transition: opacity, 0.3s;
+}
+.brakesTab .thContainer a img {
+  width: 60px;
+}
+.thContainer a:hover .selectedPoint,
+.selected .selectedPoint {
+  opacity: 1;
+}
+.switchRoof {
+  float: left;
+  margin-right: 30px;
+}
+.switch {
+  position: relative;
+  background: #efefef;
+  padding: 2px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.switchRoof p {
+  margin-bottom: 10px;
+}
+.switch .switchButton {
+  font-size: 10px;
+  line-height: 30px;
+  box-sizing: border-box;
+  width: 60px;
+  display: block;
+  float: left;
+  border-radius: 15px;
+  font-family: 'robotoregular';
+  cursor: pointer;
+  transition: background, 0.5s;
+}
+.switch .switchButton.selected {
+  background: #FFF;
+  cursor: default;
+  color: #8f0c25;
+  font-family: 'robotobold';
+}
+.roofIcons {
+  float: left;
+  margin-top: 25px;
+}
+.roofIcons a {
+  margin: 0 8px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.switchViewContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.switchView {
+  background: #FFF;
+  display: inline-block;
+  padding: 10px 10px 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.switchView .switch .switchButton {
+  width: 120px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 25px;
+  font-size: 10px;
+}
+.icon360 {
+  float: left;
+  margin-right: 10px;
+  width: 29px;
+}
+.icon360 img {
+  width: 100%;
+}
+.colorizerAll {
+  position: relative;
+}
+/********************************PRIVACY**************************************/
+.privacyPage {
+  padding: 30px;
+  background: #FFF;
+  font-family: 'robotoregular';
+}
+.privacyPage p {
+  font-size: 17px;
+  line-height: 28px;
+  margin: 10px 0;
+}
+.privacyPage h1,
+.privacyPage h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.privacyPage h3 {
+  margin-top: 60px;
+}
+/**************************NEWS***********************************/
+.singlenewsContainer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background: #FFF;
+  margin-top: 30px;
+}
+.singlenewsContainer img {
+  width: 100%;
+}
+.singlenewsContainer .newsTextContainer p {
+  display: block;
+  font-size: 16px;
+  line-height: 25px;
+}
+.singlenewsContainer .newsTextContainer h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.singlenewsContainer .newsTextContainer {
+  height: auto;
+  padding: 30px;
+}
+.newsPage.detail {
+  background: #FFF;
+}
+/***********************DEALERS*************************************/
+.newsPage.dealerPage {
+  padding: 40px 15px;
+}
+.searchDealerRow {
+  background: #FFF;
+  margin-top: 30px;
+}
+.searchDealerRow .filterBy select {
+  margin-bottom: 0;
+}
+.searchDealerRow .filterBy {
+  margin: 15px 0;
+}
+.dealerBlock {
+  border: 15px solid #e1e1e1;
+  background: #FFF;
+  padding: 20px;
+  border-right: none;
+  border-bottom: none;
+}
+.dealerBlock h2 {
+  font-family: 'robotoregular';
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.dealerData {
+  overflow: hidden;
+  margin-top: 15px;
+}
+.dealerData .etichetta {
+  float: left;
+  font-weight: bold;
+  width: 80px;
+}
+.dealerData p a {
+  color: #8f0c25;
+}
+.section .textContainer ul {
+  font-family: 'robotoregular';
+  font-size: 16px;
+  color: #FFF;
+  list-style-type: inherit;
+  padding-left: 20px;
+}
+/*****THX***********/
+.ceskoOmareThx {
+  background: #000;
+  color: #CCC;
+  text-align: right;
+  padding: 15px 50px;
+  font-size: 11px;
+  font-family: 'robotoregular';
+  letter-spacing: 2px;
+}
+/****************WALLPAPERS*********************/
+.alfistiFlare {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+.alfistiFlare h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.alfistiFlare h2 {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'robotoregular';
+  line-height: 60px;
+}
+.flarePage {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #FFF;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.flareRow a {
+  display: block;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  transition: opacity, 0.3s;
+}
+.flareRow a:hover {
+  opacity: 0.5;
+}
+.flareRow a img {
+  display: block;
+  width: 100%;
+}
+.alfistiFlare .choose {
+  float: right;
+  text-align: center;
+}
+.alfistiFlare .choose p {
+  line-height: 60px;
+  font-size: 14px;
+}
+.imgBackBig {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.thWall a {
+  display: block;
+  position: relative;
+  transition: opacity,0.3s;
+  margin-right: 1px;
+}
+.thWall a:hover {
+  opacity: 0.5;
+}
+.thWall a img {
+  display: block;
+  width: 100%;
+}
+.thWall a span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  background: #8f0c25;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity, 0.3s;
+}
+.thWall a.selected span {
+  opacity: 1;
+}
+.thWall a.selected:hover {
+  opacity: 1;
+  cursor: default;
+}
+.thWall .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.inputWall {
+  padding: 20px 0 0;
+}
+.inputWall label {
+  font-family: 'robotobold';
+  font-size: 11px;
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+.inputWall select {
+  border: none;
+  font-family: 'robotoregular';
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000;
+  background: #efefef;
+  padding: 10px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  height: 37px;
+  display: block;
+  margin-bottom: 20px;
+}
+a.downloadWall {
+  display: block;
+  background-color: #8f0c25;
+  color: #FFF;
+  font-family: 'robotobold';
+  margin-left: 15px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/down.svg");
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+.dollaro {
+  font-family: 'dollaro' !important;
+}
+.dollaroBold {
+  font-family: 'dollarobold' !important;
+}
+.sliderContainer.homeTop .carousel-control {
+  top: 310px;
+}
+/****************SCHEDA GIULIA*********************/
+.carousel-caption.giuliaCaption {
+  width: 400px;
+}
+.giuliaTop .fill img {
+  margin-top: 30px;
+}
+.schedaDati.giulia h2 {
+  line-height: 41px;
+}
+.fill.relative {
+  position: relative;
+}
+.textTopGiulietta {
+  padding: 15px;
+}
+.textTopGiulietta h1 {
+  font-size: 40px;
+  position: relative;
+  letter-spacing: 4px;
+  font-family: 'robotolight';
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #363636;
+}
+.textTopGiulietta h1 span.text {
+  display: block;
+  bottom: 23px;
+  font-size: 25px;
+  color: #FFF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.textTopGiulietta h1 span.text span {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  height: 3px;
+  background: #8f0c25;
+  width: 60px;
+  display: block;
+}
+.textTopGiulietta p {
+  margin-right: 40px;
+  margin-top: 20px;
+  font-style: italic;
+  /*color: #ffffff;*/
+}
+.textTopGiulietta p strong {
+  font-family: 'robotobold';
+  font-style: normal;
+}
+body,
+html {
+  -webkit-overflow-scrolling: none;
+}
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+body,
+html,
+.globalWrapper,
+.sliderContainer.homeTop {
+  /*height: auto!important;*/
+}
+html.noscroll,
+html.noscroll body {
+  overflow: hidden!important;
+  position: fixed!important;
+  width: 100%!important;
+  /*max-height:100%!important;	*/
+}
+html.noscroll {
+  overflow-y: scroll;
+}
+/*.globalWrapper {
+	height: auto;
+}*/
+select option {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#app-debug {
+  position: fixed;
+  top: 10%;
+  bottom: 50%;
+  left: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 15px;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#app-debug p {
+  padding: 1px 0;
+  width: 100%;
+  font-family: Verdana;
+  font-size: 11px;
+  color: #ffffff;
+}
+/* FANCYBOX ************************************************************/
+.fancybox-wrap.fancybox-mobile {
+  top: 0!important;
+}
+.fancybox-mobile {
+  bottom: 0!important;
+  position: fixed!important;
+  right: 0!important;
+}
+.fancybox-mobile .fancybox-inner,
+.fancybox-lock .fancybox-overlay {
+  overflow: hidden!important;
+}
+.fancybox-lock {
+  height: auto;
+}
+/*reskin */
+.fancybox-wrap {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+}
+.fancybox-skin,
+.fancybox-outer {
+  height: 100% !important;
+}
+.fancybox-skin {
+  background-color: #FFF;
+  border-radius: 0;
+  box-shadow: none;
+}
+.fancybox-title {
+    /*width: 100% !important;*/
+    /*height: 100% !important;*/
+    text-align: center;
+    left: 50%;
+}
+.fancybox-inner {
+  width: 100% !important;
+  height: 100% !important;
+  text-align: center;
+}
+.fancybox-inner:after {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+.fancybox-close {
+  top: 23px;
+  right: 23px;
+  z-index: 8042;
+  width: 20px !important;
+  height: 20px!important;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/close.svg") center center no-repeat !important;
+  background-size: 20px!important;
+}
+.fancybox-iframe {
+  /*max-width: 640px; max-height: 480px;*/
+  display: inline-block;
+  /*margin-top:8%;*/
+  width: 85%;
+  height: 73%;
+  vertical-align: middle!important;
+}
+.fancybox-nav {
+  width: 20%;
+  /*top:70px; rende la pagina scrollabile!!!*/
+}
+.fancybox-nav.fancybox-prev {
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  /* IE6-9 */
+}
+.fancybox-nav.fancybox-next {
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  /* IE6-9 */
+}
+.custom-fancybox-image {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center center;
+}
+.fancybox-nav span {
+  width: 50px !important;
+  height: 50px !important;
+  visibility: visible !important;
+}
+.fancybox-nav.fancybox-next span {
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right.svg") no-repeat center center;
+  background-size: 20px;
+}
+.fancybox-nav.fancybox-prev span {
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/left.svg") no-repeat center center;
+  background-size: 20px;
+}
+.fancybox-custom-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8041;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+}
+.fancybox-custom-share {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  width: 70px;
+  height: 70px;
+}
+.fancybox-custom-share-button {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-size: 31px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.7;
+}
+.fancybox-custom-share-socials {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: none;
+  z-index: 9999;
+  width: 70px;
+  height: auto;
+  background-color: #8f0c25;
+}
+.fancybox-custom-share-button.main {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/share.svg");
+}
+.fancybox-custom-share-button.facebook {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/facebook.svg");
+  background-size: 14px auto;
+}
+.fancybox-custom-share-button.twitter {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/twitter.svg");
+  background-size: 35px auto;
+}
+.fancybox-custom-share-button.pinterest {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/pinterest.svg");
+  background-size: 22px auto;
+}
+.fancybox-custom-share-button.gplus {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/googleplus.svg");
+  background-size: 33px auto;
+}
+.fancybox-custom-share-button.main:hover,
+.fancybox-custom-share-button.main.active {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/share.svg");
+  background-color: #8f0c25;
+  opacity: 1;
+}
+.fancybox-custom-share-socials a:hover {
+  background-color: #8f0c25;
+  opacity: 1;
+}
+.fancybox-wrap.buildp-popup-mobile {
+  top: 15px!important;
+  left: 15px!important;
+  right: 15px!important;
+  bottom: 15px!important;
+  width: auto!important;
+  height: auto!important;
+}
+.fancybox-wrap.footer-popup {
+  top: 15px!important;
+  left: 15px!important;
+  right: 15px!important;
+  bottom: 15px!important;
+  max-width: 992px!important;
+  height: auto!important;
+}
+.fancybox-wrap.buildp-popup-mobile .fancybox-inner,
+.fancybox-wrap.footer-popup .fancybox-inner {
+  overflow: hidden!important;
+}
+.fancybox-wrap.buildp-popup-mobile,
+.fancybox-wrap.buildp-popup-mobile .fancybox-skin,
+.fancybox-wrap.footer-popup,
+.fancybox-wrap.footer-popup .fancybox-skin {
+  background-color: #000000;
+}
+.fancybox-wrap.footer-popup.white,
+.fancybox-wrap.footer-popup.white .fancybox-skin {
+  background-color: #ffffff;
+}
+.fancybox-wrap.buildp-popup-mobile .fancybox-close,
+.fancybox-wrap.footer-popup .fancybox-close {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/close.svg") !important;
+}
+.fancybox-wrap.footer-popup.white .fancybox-close {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/close.svg") !important;
+}
+.fancybox-wrap.footer-popup .fancybox-inner iframe {
+  width: 100%;
+  height: 85%;
+}
+.popup-data {
+  display: none;
+}
+#buildp-popup-mobile-inner {
+  display: inline-block;
+  vertical-align: middle;
+}
+#buildp-popup-mobile-inner img {
+  width: 100%;
+  max-width: 270px;
+}
+#buildp-popup-mobile-inner p {
+  color: #eaeaea;
+  font-size: 16px;
+  font-family: "robotothin";
+}
+.popup-data {
+  margin-top: 50px;
+  overflow-y: auto;
+  padding-right: 10px;
+  height: 85%;
+}
+.popup-inner {
+  overflow-y: auto;
+  font-family: "robotoregular";
+  text-align: justify;
+}
+.popup-inner h3 {
+  margin-top: 0;
+  color: #000000;
+}
+/*#fancybox-loading div { background-image: url("https://www.alfaromeousa.com/css/../img/preloader.gif"); }*/
+/* END FANCYBOX ************************************************************/
+/* WCARPAN ************************************************************/
+.wcp-loader-wrapper .wcp-loader {
+  background-image: url("https://www.alfaromeousa.com/css/../img/preloader_white.gif");
+}
+/* END WCARPAN ************************************************************/
+/* LAZY LOADER ************************************************************/
+*[data-behavior=lazy] {
+  opacity: 0;
+}
+*[data-lazy-status=collapsed] {
+  overflow: hidden!important;
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  height: 0!important;
+}
+.lzPreloader {
+  position: absolute;
+  padding: 15px 0 15px 0;
+  margin: 0;
+  clear: both;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 64px;
+  background-color: rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font: 0/0 a;
+}
+.lzPreloader:before {
+  /* create a full-height inline block pseudo=element */
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  /* vertical alignment of the inline element */
+  height: 100%;
+}
+.lzPreloader.lzPreloaderFixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.lzPreloader .lzPreloaderImg,
+.loader-overall .loader-overall-img {
+  display: inline-block;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+  background: url("https://www.alfaromeousa.com/css/../img/preloader.gif") no-repeat 0 0 transparent;
+  background-size: 32px 32px;
+  vertical-align: middle;
+}
+/* END LAZY LOADER ************************************************************/
+/* STREAM FEED LOADER ************************************************************/
+.sfl-loader {
+  position: relative;
+  padding: 0;
+  margin: 15px 0 15px 0;
+  clear: both;
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  font: 0/0 a;
+}
+.sfl-loader:before {
+  /* create a full-height inline block pseudo=element */
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  /* vertical alignment of the inline element */
+  height: 100%;
+}
+.sfl-loader .sfl-loader-preloader-img {
+  display: inline-block;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+  background: url("https://www.alfaromeousa.com/css/../img/preloader_white.gif") no-repeat 0 0 transparent;
+  background-size: 32px 32px;
+  vertical-align: middle;
+}
+/* END STREAM FEED LOADER ************************************************************/
+/* GENERAL **************************************************************/
+.loader-overall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font: 0/0 a;
+  background-color: #000000;
+}
+.loader-overall:before {
+  /* create a full-height inline block pseudo=element */
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  /* vertical alignment of the inline element */
+  height: 100%;
+}
+.textContainer p span.smaller {
+  font-size: 13px;
+}
+.callNav a.lang-change {
+  padding-top: 44px;
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/flag/ca.svg");
+  background-size: 30px auto;
+  background-position: center 22px;
+}
+.callNav a.lang-change span {
+  display: inline-block;
+}
+/* END GENERAL **************************************************************/
+/* SUBMENU ************************************************************/
+.submenuContainer {
+  padding-top: 80px;
+}
+.submenuContainer .container-fluid.fixed {
+  border-top: 1px solid #efefef;
+  position: fixed;
+  top: 30px;
+  width: 100%;
+  max-width: 1600px;
+  z-index: 19;
+  /*text-align:center;*/
+}
+.submenuContainer .container-fluid.fixed .submenu .logoAlfa {
+  opacity: 1;
+  margin-top: 0;
+}
+.submenu.historySub .schedaDati {
+  margin-top: 0;
+}
+.submenu.historySub h2 {
+  line-height: 80px;
+}
+/* END SUBMENU ************************************************************/
+/* SCROLLTIP ***************************************************************/
+#scroll-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  z-index: 19;
+  display: none;
+  width: 100%;
+}
+/* END SCROLLTIP ***************************************************************/
+/* HEADER ***************************************************************/
+.submenuMobile {
+  background: #efefef;
+}
+.mobileNav .submenuMobile {
+  padding-left: 0;
+  padding-right: 0;
+}
+.sfondomegamenuContainer {
+  height: auto !important;
+}
+.menu-megamenu-backg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 19;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+}
+/* END HEADER ***************************************************************/
+/* BLOCKS ***************************************************************/
+.buttonAr {
+  font-size: 10px;
+}
+h1.blockTitle.section {
+  background: #efefef none repeat scroll 0 0;
+  color: #000;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding: 40px 15px;
+  text-align: center;
+}
+.blocklist-row .blocklist-item {
+  border-bottom: 1px solid #efefef;
+}
+.blocklist-row .blocklist-item:last-child {
+  border-right: none;
+}
+/* END BLOCKS ***************************************************************/
+/* FOLLOWUP *************************************************************/
+.followFixed ul > li.buildandprice a span.icon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/build.svg");
+  background-size: 20px auto;
+}
+.followFixed ul > li.buildandprice a:hover span.icon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/build.svg");
+  background-size: 20px auto;
+}
+.followFixed ul > li.searchnewinventory a span.icon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/inventory.svg");
+  background-size: 21px auto;
+}
+.followFixed ul > li.searchnewinventory a:hover span.icon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/inventory.svg");
+  background-size: 21px auto;
+}
+.followFixed ul > li.scheduletestdrive a span.icon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/testdrive.svg");
+  background-size: 24px auto;
+}
+.followFixed ul > li.scheduletestdrive a:hover span.icon {
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/testdrive.svg");
+  background-size: 24px auto;
+}
+/* END FOLLOWUP *************************************************************/
+/* FIND COUNTRY *************************************************************/
+span.customSelect {
+  background-size: auto 25%;
+  background-position: 97% center;
+  background-repeat: no-repeat;
+}
+form.country span.customSelect {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 0 10px 0;
+  padding: 10px 30px 10px 10px;
+  width: 100%;
+  height: 37px;
+  color: #000;
+  font-family: "robotoregular";
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/down.svg");
+  background-color: #efefef;
+  border: medium none;
+}
+form.country .has-error span.customSelect,
+.has-error span.customSelect {
+  background-color: #e4a6a6;
+}
+span.customSelect span.customSelectInner {
+  overflow: hidden;
+  width: 100%!important;
+}
+/* END FIND COUNTRY *************************************************************/
+/* VEHICLES *************************************************************/
+h1.blockTitle {
+  text-transform: none;
+}
+.submenuContainer.fixed {
+  z-index: 19;
+}
+.section.black .buttonAr {
+  background: none repeat scroll 0 0 #fff;
+  color: #000;
+}
+.section.black .buttonAr:hover {
+  background: none repeat scroll 0 0 #000;
+  color: #fff;
+}
+.hiddenPage {
+  display: none;
+}
+/* PANORAMIC *********************/
+#panoramicWrapper {
+  overflow: hidden;
+  height: 100%;
+  /*max-height: 631px;*/
+}
+#panoramicInteriorWrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  /*display: none;*/
+  width: 100%;
+  height: 100%;
+}
+#htmlPanorama,
+#panoramicInteriorWrapper .flashContainer {
+  width: 100%;
+  height: 100%;
+}
+#panoramicInteriorWrapper {
+  display: none;
+}
+#panoramic-interface {
+  /*position: absolute; bottom: 0; left:0; z-index:9;*/
+  width: 100%;
+  min-height: 146px;
+  background-color: #ffffff;
+}
+.colorsTab .thContainer a.wcp-active {
+  border: 4px solid #e1e1e1;
+}
+.wcp-active .selectedPoint {
+  opacity: 1;
+}
+.colorizerWrapper {
+  position: relative;
+  overflow: hidden;
+  /*height: 631px;*/
+  width: 100%;
+}
+.tabContainer .nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  white-space: nowrap;
+}
+.switch .switchButton,
+.switchView .switch .switchButton {
+  width: 50%;
+}
+.interfaceColorizerContainer,
+.roofTab .roofIcons,
+.spoilerTab .roofIcons,
+.switchViewContainer.disabled .switchView,
+.switchViewContainer .switchView .switch,
+.switchViewContainer .switchView .icon360 {
+  position: relative;
+}
+.layout-blank .interfaceColorizerContainer {
+  position: absolute;
+  bottom: 0;
+}
+.switchViewContainer.disabled .switchView::after,
+.interfaceColorizerContainer.disabled::after,
+.roofTab .roofIcons.disabled::after,
+.spoilerTab .roofIcons.disabled::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.switchViewContainer.disabled .switchView::after {
+  border-radius: 15px 15px 0 0;
+}
+.switchViewContainer {
+  position: relative;
+  bottom: auto;
+  top: auto;
+  line-height: 0;
+}
+.icon360 {
+  display: none;
+  width: 9.7%;
+}
+.switch {
+  float: right;
+  /*width: 86%;*/
+  width: 100%;
+}
+.switchView {
+  padding: 4px;
+  max-width: 325px;
+  width: 100%;
+}
+.switchView .switch .switchButton {
+  line-height: 15px;
+}
+.seatsTab .thContainer a {
+  display: block;
+  float: left;
+  margin: 0 15px;
+  position: relative;
+  cursor: pointer;
+}
+.section.colorizer {
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+  width: 100%;
+  background: #FFF;
+}
+.section.colorizer .imgColContainer {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: url("https://www.alfaromeousa.com/css/../img/scheda/4cspider/360-img.jpg") #000000 center center no-repeat;
+  /*background-size: cover;*/
+  background-size: 100% auto;
+}
+.section.colorizer .imgColContainer.coupe {
+  background: url("https://www.alfaromeousa.com/css/../img/scheda/4cCoupe/360-img.jpg") #000000 center center no-repeat;
+}
+.section.colorizer .imgColContainer.coupel {
+  background: url("https://www.alfaromeousa.com/css/../img/scheda/4cCoupeL/360-img.jpg") #000000 center center no-repeat;
+}
+.textColorizer {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  color: #FFF;
+  text-align: center;
+}
+.textColorizer h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.textColorizer p {
+  font-size: 12px;
+  margin: 0 15px;
+}
+.colorizerWrapper {
+  /*height: 320px;*/
+  background-color: #000000;
+}
+.interFaceContainer {
+  padding-bottom: 20px;
+  min-height: initial;
+}
+#panoramic-interface .tab-content .tab-pane a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#panoramic-interface .tab-pane a span img {
+  max-width: 32px;
+}
+#interface-block-interior .tab-pane a span img {
+  max-width: none;
+  max-height: 54px;
+}
+.colorsTab .thContainer a span img {
+  max-width: 100%;
+}
+.colorsTab .thContainer a span {
+  width: 24px;
+  height: 24px;
+}
+.colorsTab .thContainer a {
+  margin-left: 0;
+  margin-right: 0;
+  width: auto;
+  height: auto;
+}
+.colorsTab .thContainer a span {
+  margin: 2px;
+}
+.nav-pills.colorizer > li a {
+  /*padding-left: 5px; padding-right: 5px;*/
+}
+div.wcp-image {
+  /*margin-top: -3%;*/
+}
+div.wcp-image img {
+  margin-left: -20%;
+  margin-top: -5.7%;
+  width: 140%;
+}
+.colorizerWrapper .buttonAr {
+  margin-top: 20px ;
+}
+.contentTabContainer .etichetteContainerDesc {
+  padding-top: 40px;
+}
+.switchViewContainerMobile {
+  top: -40px;
+}
+.switchViewContainerMobile .switchButton {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  min-width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 0 10px 0 0;
+}
+.switchViewContainerMobile .switchButton.switch-butt-int {
+  left: auto;
+  right: 0;
+  border-radius: 10px 0 0 0;
+}
+.switchRoof .switch {
+  width: 100%;
+  min-width: 100px;
+}
+#panoramic-interface .tab-content .tab-pane .switch a {
+  margin-left: 0;
+  margin-right: 0;
+}
+.spoilerTab .roofIcons {
+  margin-top: 0;
+}
+.pre-prod {
+  color: #777777;
+  font-size: 11px;
+  padding-top: 5px;
+}
+.interfaceBlock {
+  padding-top: 8px;
+}
+html.layout-blank,
+body.layout-blank {
+  width: 100%!important;
+  height: 100%!important;
+}
+body.layout-blank .section.colorizer {
+  padding: 0!important;
+  width: 100%!important;
+  height: 100%!important;
+  background-color: #000000;
+}
+body.layout-blank .colorizerWrapper {
+  height: 100%;
+}
+body.layout-blank #panoramicWrapper {
+  height: 100%;
+}
+/*body.layout-blank div.wcp-image {
+	margin:0!important;
+}*/
+body.layout-blank .imgColContainer {
+  display: none;
+}
+body.layout-blank .wcp-loader {
+  margin-top: auto!important;
+}
+body.layout-blank #style .colorizerWrapper {
+  max-height: none;
+}
+body.layout-blank .switchViewContainer {
+  margin-left: 0;
+}
+/* END VEHICLES *************************************************************/
+/* NEWS *************************************************************/
+.filterBy .inputContainer {
+  margin: 0 0 20px 15px;
+  height: 37px;
+  width: 250px;
+}
+.filterBy label,
+.filterBy .inputContainer {
+  float: left;
+}
+.filterBy select {
+  margin: 0;
+}
+.filterBy span.customSelect {
+  box-sizing: border-box;
+  margin: 0 0 10px 0;
+  padding: 10px 30px 10px 10px;
+  width: 100%;
+  height: 37px;
+  color: #ffffff;
+  font-family: "robotoregular";
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #000000;
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/down.svg");
+  border: medium none;
+}
+.newsPage h1.news-title {
+  margin-bottom: 50px;
+}
+/* END NEWS *************************************************************/
+/* INDEX *************************************************************/
+.twitterLink img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+a.tw-link,
+a.tw-link-hash {
+  color: #8f0c25;
+}
+a.tw-link {
+  text-decoration: underline;
+}
+/* END INDEX *************************************************************/
+/* SHOPPINGT  *************************************************************/
+.dealerBlock {
+  border-right: 15px solid #e1e1e1;
+}
+.dealerContainer .row {
+  background-color: #e1e1e1;
+}
+.dealerContainer .row div:last-child .dealerBlock {
+  border-bottom: 15px solid #e1e1e1;
+}
+.dealerData p {
+  clear: both;
+}
+.shoppingt-iframe-wrapper {
+  margin-top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+.shoppingt-iframe {
+  /*float: left;*/
+  width: 100%;
+  height: 1163px;
+}
+/*.iframe-mobile {
+	height:100%;
+}*/
+.dealer-loc-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  background-color: #E1E1E1;
+}
+.dealer-loc-wrapper .dealerContainer .dealerBlock {
+  border: none!important;
+  border-bottom: 15px solid #e1e1e1!important;
+}
+.dealer-loc-wrapper .dealerContainer .row,
+.dealer-loc-wrapper .dealerContainer .row:last-child {
+  border: none!important;
+}
+.dealer-scroller-wrapper.scroll-content {
+  overflow-x: hidden!important;
+  /*width:100%;*/
+}
+.scroll-element.scroll-x {
+  display: none !important;
+}
+.dealer-loc-wrapper .dealerContainer > .row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 5px;
+}
+.dealer-loc-wrapper .scrollbar-inner > .scroll-element.scroll-y {
+  right: 0;
+  width: 8px;
+}
+.dealer-loc-wrapper .scrollbar-inner > .scroll-element .scroll-element_track,
+.dealer-loc-wrapper .scrollbar-inner > .scroll-element .scroll-bar {
+  background-color: #000000;
+  opacity: 0.1;
+}
+.dealer-loc-wrapper .scrollbar-inner > .scroll-element .scroll-bar {
+  opacity: 0.3;
+}
+.dealer-loc-title {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  height: 73px;
+  font-size: 16px;
+  font-family: 'robotoregular';
+  text-transform: uppercase;
+}
+.dealer-loc-title .result-txt {
+  display: none;
+}
+.dealer-loc-title .filter-value {
+  font-family: 'robotothin';
+}
+.filterblock {
+  display: none;
+}
+.filterblock-dealername input {
+  padding: 7px 15px 7px 15px;
+  float: right;
+  color: #000000;
+  width: 97%;
+  text-transform: uppercase;
+  text-align: left;
+  border: 1px solid #E1E1E1;
+}
+.filterblock-dealername input.dealername-submit {
+  padding: 8px 15px 8px 15px;
+  float: left;
+  color: #ffffff;
+  /*width:15%;*/
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background: #000000;
+}
+.filterblock-dealername .filterBy .row > div {
+  position: relative;
+}
+.filterblock-dealername .butt-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  display: none;
+  height: 100%;
+  width: 42px;
+  background-color: #ff0000;
+  cursor: pointer;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/close.svg") no-repeat center center transparent;
+  background-size: auto 15px;
+}
+.dealerBlock.info-win {
+  padding: 10px;
+  height: auto;
+  border: none;
+}
+.dealerBlock.info-win h2 {
+  margin-bottom: 10px;
+}
+.dealerBlock.info-win .dealerData {
+  margin-top: 0;
+}
+.dealer-loc-wrapper .dealerBlock.info-win .dealerData p {
+  padding-top: 0;
+}
+.map-marker-label,
+.map-marker-icon {
+  padding-top: 5px;
+  width: 22px;
+  height: 32px;
+  font-size: 11px;
+  font-family: 'robotobold';
+  color: #ffffff;
+  text-align: center;
+  background: url("https://www.alfaromeousa.com/css/../img/map_marker.png") no-repeat 0 0 transparent;
+}
+.map-marker-icon {
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 15px;
+  float: left;
+  padding: 0;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+.dealer-loc-wrapper .dealerBlock h2 {
+  line-height: 32px;
+  cursor: pointer;
+}
+.dealerContainer .row.map-control {
+  background: none;
+}
+.dealerContainer .row.map-control > div {
+  padding-top: 10px;
+}
+.dealerContainer .row.map-control a {
+  padding-right: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") no-repeat right center transparent;
+  background-size: auto 9px;
+}
+.dealer-loc-wrapper .dealerBlock {
+  height: auto;
+}
+.dealer-loc-wrapper .dealerBlock .dealerData p {
+  padding-top: 10px;
+}
+.searchDealerRow.search-dealer-row-map .filterBy .inputContainer {
+  margin-left: 0;
+}
+.searchDealerRow.search-dealer-row-map .filterBy label {
+  margin-right: 15px;
+}
+.filterblock-dealername .filterBy {
+  /*padding-top:37px;*/
+}
+.dealer-loc-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.alfaromeousa.com/css/../img/preloader_white.gif") no-repeat center center #e1e1e1;
+}
+/* END SHOPPINGT *************************************************************/
+/* SKYEXP *************************************************************/
+body.body-skyexp .logoAlfa {
+  position: absolute;
+  z-index: 9999;
+  border: none;
+}
+/* END SKYEXP *************************************************************/
+/* VIDEO GIORGIO ***********************************************/
+.sliderContainer.homeTop {
+  overflow: hidden;
+}
+.video-giorgio-wrapper {
+  height: auto;
+}
+.video-giorgio-wrapper .container-fluid,
+.video-giorgio-wrapper .container-fluid .row,
+.video-giorgio-wrapper .container-fluid .row .col-wrapper {
+  height: 100%;
+}
+.butt-video-replay-wrapper {
+  position: absolute;
+  left: 0;
+  /*bottom:120px;*/
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.butt-video-replay-wrapper:before {
+  /* create a full-height inline block pseudo=element */
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  /* vertical alignment of the inline element */
+  height: 100%;
+}
+.carousel-caption .butt-video-replay-wrapper {
+  top: auto;
+  bottom: 62%;
+}
+.butt-video-replay-wrapper a {
+  display: inline-block;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "robotoregular";
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  vertical-align: middle;
+}
+.butt-video-replay-wrapper a .icon {
+  display: block;
+  clear: both;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/replay.svg") no-repeat center center;
+  background-size: 100% auto;
+}
+.homeTop .carousel-caption .buttonAr.video-show-end,
+.video-giorgio-wrapper .video-show-end {
+  display: none;
+}
+/*html.touch .butt-watchvideo { display:none!important; }*/
+.video-giorgio-wrapper .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.alfaromeousa.com/css/../img/scheda/giulia/video/4c_spider_postervideo2.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* ALFASOUL **************************************************************/
+.video-desc-wrapper {
+  text-align: center;
+  padding: 20px;
+}
+.video-desc-wrapper .video-desc {
+  margin: auto;
+  width: auto;
+}
+.video-desc-wrapper .video-txt {
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-family: robotoregular;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.alfasoul-video video.fullwidth {
+  float: left;
+}
+/*.alfasoulSection .container-fluid > div.row:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}*/
+.imgWrapperMegaMenu.discover-topleft .contenutoText {
+  /*position: absolute; top:0; right: 0; display: inline-block;
+	width:auto;*/
+  position: absolute;
+  right: 35px;
+  top: 0;
+  bottom: auto;
+  display: inline-block;
+  width: auto;
+}
+.imgWrapperMegaMenu.discover-topleft .contenutoText .discoverTh {
+  padding-right: 20px;
+  margin-top: -5px;
+  /*padding-top:5px;*/
+  color: #000000;
+  font-family: "robotoregular";
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") no-repeat scroll right center / 6px auto;
+}
+/* END ALFASOUL **************************************************************/
+/*.video-giorgio-wrapper video {
+	height: 100%; width:auto;
+}*/
+/* END VIDEO GIORGIO ***********************************************/
+/* FLARE **************************************************************/
+a.downloadWall {
+  margin: 0!important;
+  background-image: none!important;
+}
+#flare-step2 {
+  display: none;
+}
+/* END FLARE **************************************************************/
+/* !!!! DEBUG *************************************************************/
+/*ul.subnav li a {
+	max-width: 100px!important; overflow: hidden;	white-space: nowrap;
+}
+
+.nav-pills.colorizer > li {
+	max-width: 100px!important; overflow: hidden; white-space: nowrap;
+}*/
+/* !!!! END DEBUG *************************************************************/
+/* MEGAMENU MODS ********************************************************/
+.depthMenu .megamenuUl li a.active,
+.depthMenu .megamenuUl li a:hover {
+  color: #000000;
+  background-color: #e1e1e1;
+  background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg");
+  border-color: #ffffff;
+}
+a.imgWrapperMegaMenu {
+  cursor: default;
+}
+.imgWrapperMegaMenu:hover {
+  opacity: 1;
+}
+a.imgWrapperMegaMenu.discover-topleft {
+  cursor: pointer;
+}
+.imgWrapperMegaMenu.discover-topleft:hover {
+  opacity: 0.7;
+}
+.imageWrapper h3 a.discover {
+  display: inline-block;
+  clear: both;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  margin-top: 10px;
+  color: #8f0c25;
+  font-family: "robotobold";
+  font-size: 12px;
+  /*background: rgba(0, 0, 0, 0) url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small_bold.svg") no-repeat scroll right center / 6px auto;*/
+}
+.imageWrapper.img-only h3 a.discover {
+  margin-top: 25px;
+}
+/* END MEGAMENU MODS ********************************************************/
+/* LESS Document */
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+  /*************FOLLOW UP HOME************************/
+  /*************************FOLLOWUP HOME*********************************************/
+  .followUplineWrapper {
+    overflow: hidden;
+    background: #efefef;
+  }
+  .buttonFollowContainer {
+    display: table;
+    width: 100%;
+    padding: 10px 20px;
+    background: #efefef;
+    box-sizing: border-box;
+    border-right: 1px solid #e1e1e1;
+    transition: background, 0.5s;
+    cursor: pointer;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+  }
+  .buttonFollowContainer span.column,
+  .buttonFollowContainer span.IconColumn {
+    height: 40px;
+  }
+  .buttonFollowContainer span.column.IconColumn {
+    padding: 0 15px 0 0;
+    width: 60px;
+  }
+  .allVehiclesPage .followUpMegamenu a {
+    padding: 40px 10px 0 10px;
+    background-position: center top;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  span.titoloTasto {
+    font-size: 10px;
+  }
+  .carousel-indicators {
+    bottom: 170px;
+  }
+  span.iconTonda {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+  }
+  span.iconTonda.signUp {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/updates.svg");
+    background-size: 24px;
+  }
+  span.iconTonda.getBrochure {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/brochure.svg");
+    background-size: 20px;
+  }
+  span.iconTonda.findDealer {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/finddealer.svg");
+    background-size: 19px;
+  }
+  span.iconTonda.buildIcon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/build.svg");
+  }
+  span.iconTonda.testDriveIcon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/testdrive.svg");
+    background-size: 20px;
+  }
+  span.iconTonda.searchInventoryIcon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/inventory.svg");
+    background-position: 8px 4px;
+  }
+  span.iconTonda.mailIcon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/getaquote.svg");
+  }
+  /***********ALFA ROMEO WORLD****************************/
+  span.playVideo {
+    width: 66px;
+    height: 66px;
+    background: rgba(255, 255, 255, 0.7) url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/playVideo.svg") 28px center no-repeat;
+    background-size: 14px;
+    border-radius: 33px;
+  }
+  a.videoLink span.playVideo {
+    margin-left: -33px;
+    margin-top: -33px;
+  }
+  span.bottomSocial {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    right: 30px;
+    display: block;
+    font-size: 14px;
+    font-family: 'robotolight';
+  }
+  span.bottomSocial.facebook {
+    color: #FFF;
+    padding-left: 40px;
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/facebook.svg") left center no-repeat;
+    background-size: 10px;
+  }
+  span.bottomSocial.twitter {
+    color: #8f0c25;
+    padding-left: 30px;
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/twitter.svg") left center no-repeat;
+    background-size: 26px;
+    font-size: 18px;
+  }
+  span.textTwitter .testo {
+    font-size: 13px;
+    display: block;
+  }
+  span.textTwitter .data {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  span.textTwitter {
+    top: 30px;
+    left: 30px;
+    right: 30px;
+  }
+  span.bottomSocial.instagram {
+    color: #FFF;
+    padding-left: 40px;
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/instagram.svg") left center no-repeat;
+    background-size: 24px;
+  }
+  /***********SCHEDA*********************/
+  .section .textContainer h2 {
+    font-size: 40px;
+  }
+  .privacyList, .legalList {
+    float: left;
+  }
+  .textContainer .buttonAr {
+    margin: 10px 0;
+  }
+  /********************CAROUSEL**************************/
+  /*.carousel-control {
+    width: 7%;
+  }
+  .carousel-caption {
+    position: absolute;
+    background: none;
+    bottom: inherit;
+    left: inherit;
+    right: inherit;
+    padding-bottom: 0px;
+    height: auto;
+    box-sizing: content-box;
+    width: auto;
+    padding-top: auto;
+    top: 50%;
+    margin-top: -14%;
+  }
+  .carousel-caption h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'robotoregular';
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  .carousel-caption h2 strong {
+    font-family: 'robotobold';
+    font-weight: normal;
+  }
+  .carousel-caption h3 {
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'robotoregular';
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    padding-left: 50px;
+    background: url("https://www.alfaromeousa.com/css/../img/slideshowHome/redline.jpg") left 9px no-repeat;
+  }
+  .carousel-control .icon-prev:before {
+    content: '';
+  }
+  .carousel-control .icon-next:before {
+    content: '';
+  }
+  .carousel-control .icon-prev {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/left.svg") center center no-repeat;
+    background-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  .carousel-control .icon-next {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right.svg") center center no-repeat;
+    background-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+  }
+  .buttonAr {
+    display: inline-block;
+    padding: 7px 20px;
+    font-family: 'robotoregular';
+    letter-spacing: 2px;
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-shadow: none;
+    margin: 10px 0;
+    transition: background, 0.3s, color, 0.3s;
+  }
+  .buttonAr.bianco {
+    background: #FFF;
+  }
+  .buttonAr.bianco:hover {
+    background: #111111;
+    color: #FFF;
+  }
+  .buttonAr.nero:hover {
+    background: #e1e1e1;
+    color: #000;
+  }
+  .carousel-indicators {
+    bottom: 0px;
+  }
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next,
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right {
+    top: auto;
+    margin-top: auto;
+    bottom: 60px;
+  }
+  .carousel-caption.centerJustifyCaption .buttonAr {
+    width: auto;
+    letter-spacing: 1px;
+    font-size: 11px;
+  }
+  .carousel-caption {
+    z-index: 1;
+  }
+  .carousel-caption.sxCaption {
+    left: 80px ;
+    text-align: left;
+    top: 130px;
+  }
+  .carousel-caption.dxCaption.moreSpace {
+    margin-top: -75px;
+  }
+  .carousel-caption.dxCaption {
+    right: 100px;
+    left: auto;
+    width: 300px;
+    text-align: left;
+  }
+  .carousel-indicators li {
+    width: 80px;
+    border: none;
+    background: #CCC;
+    height: 3px;
+    margin: 1px 10px;
+  }
+  .carousel-indicators li.active {
+    width: 80px;
+    background: #8f0c25;
+    border: none;
+    height: 3px;
+    margin: 1px 10px;
+  }
+  /!*.carousel-caption.dxCaption h3{ padding-left:0; padding-right:50px; background:url("https://www.alfaromeousa.com/css/../img/slideshowHome/redline.jpg") right 9px no-repeat}*!/
+  .homeTop .carousel-caption .buttonAr {
+    display: inline-block;
+    width: 150px;
+    margin: 5px 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .carousel-caption h3 br {
+    display: inherit;
+  }
+  .carousel-inner {
+    margin-top: -1px;
+  }
+  /!*************************SLIDER STORICO*******************************************!/
+  .carousel-caption.centerJustifyCaption {
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    margin-top: -15%;
+  }
+  .carousel-caption.centerJustifyCaption h2 {
+    letter-spacing: 2px;
+    font-family: 'robotoregular';
+    font-size: 13px;
+  }
+  .carousel-caption.centerJustifyCaption h3 {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    padding: 0;
+    background: none;
+    font-family: 'robotoregular';
+  }
+  .carousel-caption.centerJustifyCaption h3 em {
+    font-size: 18px;
+  }
+  .carousel-caption.centerJustifyCaption h3 strong {
+    font-weight: normal!important;
+    font-family: 'robotobold';
+  }
+  .carousel-caption.centerJustifyCaption h3.centered {
+    text-align: center;
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .sliderContainer.homeTop .carousel-control {
+    top: 0px;
+  }
+  /!********************GIULIA************************!/
+  .section .textContainer.textright p {
+    margin-right: 0;
+  }
+  .textTopGiulietta p {
+    color: #000000;
+  }
+  .section .textContainer.textright p span {
+    font-size: 12px;
+  }
+  .gallery-black.homeTop .carousel-caption.sxCaption {
+    left: 130px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    right: 60%;
+  }
+  .video-giorgio-wrapper .carousel-caption.sxCaption {
+    left: 90px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    right: 60%;
+    top: 160px;
+  }
+  .gallery-black.homeTop .fill {
+    background-position: 88% top;
+  }
+  .gallery-black.homeTop .carousel-caption.sxCaption h2 {
+    font-size: 13px;
+  }
+  .gallery-black.homeTop .carousel-caption.sxCaption h3 {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    padding-left: 0;
+    background: none;
+  }
+  .homeTop .fill.video video[poster] {
+    height: 100%;
+  }
+  .yearsStile p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .video-giorgio-wrapper .carousel-caption.sxCaption h2 {
+    font-size: 16px;
+  }
+  .video-giorgio-wrapper .carousel-caption h3 {
+    font-size: 11px;
+  }
+  .video-giorgio-wrapper .buttonAr {
+    font-size: 12px;
+  }
+  /!*******************SOUL***********************!/
+  .video-desc-wrapper {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0;
+  }
+  .video-desc-wrapper .video-txt {
+    font-size: 16px;
+  }*/
+}
+@media (min-width: 768px) {
+  body,
+  html,
+  .globalWrapper,
+  .sliderContainer.homeTop {
+    /*height: auto!important;*/
+  }
+  .fancybox-iframe {
+    width: 85%;
+    height: 73%;
+  }
+  .fancybox-wrap.footer-popup {
+    top: 15%!important;
+    bottom: 15%!important;
+    left: 20%!important;
+    right: 20%!important;
+    max-width: 992px!important;
+    height: auto!important;
+  }
+  /* BLOCKS ***************************************************************/
+  .buttonAr {
+    font-size: 14px;
+  }
+  span.customSelect {
+    background-size: auto 19%;
+    background-position: 94% center;
+  }
+  /* END BLOCKS ***************************************************************/
+  /* VEHICLES *************************************************************/
+  .scroll-element.scroll-x {
+    display: none !important;
+  }
+  .scrollbar-inner > .scroll-element.scroll-y {
+    width: 5px;
+  }
+  .scrollbar-inner > .scroll-element .scroll-element_outer,
+  .scrollbar-inner > .scroll-element .scroll-element_track,
+  .scrollbar-inner > .scroll-element .scroll-bar {
+    border-radius: 0;
+  }
+  .scrollbar-inner > .scroll-element .scroll-element_track,
+  .scrollbar-inner > .scroll-element .scroll-bar {
+    background-color: #ffffff;
+  }
+  .scrollbar-inner > .scroll-element .scroll-element_track {
+    opacity: 0.2;
+  }
+  /* PANORAMIC *********************/
+  #style .colorizerWrapper {
+    max-height: 793px;
+  }
+  #panoramic-interface {
+    /*position: absolute; bottom:0; left:0; z-index:9;*/
+    height: 32%;
+    max-height: 200px;
+  }
+  #panoramic-interface .colorsTab .thContainer a span {
+    margin: 5px;
+    height: 37px;
+    width: 37px;
+  }
+  #panoramic-interface .tab-content .tab-pane a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #interface-block-interior .tab-content .tab-pane a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .section.colorizer .imgColContainer {
+    background-size: 100% auto;
+  }
+  div.wcp-image img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+  #panoramic-interface .tab-pane a span img {
+    max-width: none;
+  }
+  #panoramic-interface .tab-pane.haloTab a span img {
+    max-height: 50px;
+  }
+  .textColorizer p {
+    font-size: 14px;
+  }
+  .nav-pills.colorizer > li a {
+    padding: 10px 25px;
+  }
+  .switchViewContainer {
+    bottom: auto;
+    top: -49px;
+    position: absolute;
+    z-index: 9;
+    line-height: 0;
+  }
+  .switchView {
+    padding: 10px;
+  }
+  .icon360 {
+    display: block;
+  }
+  .switch {
+    width: 86%;
+  }
+  .switchView .switch .switchButton {
+    line-height: 25px;
+  }
+  /* END VEHICLES *************************************************************/
+  /* SHOPPINGT  *************************************************************/
+  .dealerBlock {
+    border-right: none;
+    height: 285px;
+  }
+  .dealerContainer .row div:last-child .dealerBlock {
+    border-bottom: none;
+  }
+  .filterBy .inputContainer,
+  .filterBy label {
+    margin-bottom: 0;
+  }
+  .shoppingt-iframe-wrapper {
+    margin-top: 80px;
+  }
+  /* END SHOPPINGT *************************************************************/
+  /*.butt-video-replay-wrapper {
+	top:50%;
+}*/
+  .butt-video-replay-wrapper a {
+    margin-top: -7%;
+  }
+  .butt-video-replay-wrapper a .icon {
+    width: 120px;
+    height: 120px;
+  }
+  .primologo > h2 {
+    margin-top: 110px;
+  }
+  /* ALFASOUL **************************************************************/
+  .video-desc-wrapper {
+    text-align: center;
+    padding: 20px;
+  }
+  .video-desc-wrapper .video-txt {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+  /* MEGAMENU MODS ********************************************************/
+  a.imgWrapperMegaMenu {
+    cursor: default;
+  }
+  .imgWrapperMegaMenu:hover {
+    opacity: 1;
+  }
+  a.imgWrapperMegaMenu.discover-topleft {
+    cursor: pointer;
+  }
+  .imgWrapperMegaMenu.discover-topleft:hover {
+    opacity: 0.7;
+  }
+  .imageWrapper h3 a.discover {
+    display: inline-block;
+    clear: both;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-top: 10px;
+    color: #8f0c25;
+    font-family: "robotobold";
+    font-size: 12px;
+    /*background: rgba(0, 0, 0, 0) url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small_bold.svg") no-repeat scroll right center / 6px auto;*/
+  }
+  .imageWrapper.img-only h3 a.discover {
+    margin-top: 25px;
+  }
+  /* END MEGAMENU MODS ********************************************************/
+}
+/* END MEDIA */
+/* LESS Document */
+/*FOR LARGE DEVICE*/
+@media (min-width: 992px) {
+  body {
+    -ms-overflow-y: scroll !important;
+    -ms-overflow-style: scrollbar!important;
+    overflow-x: hidden;
+  }
+  /****************************HEADER*********************************/
+  .primaryNavContainer {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    top: 0;
+  }
+  .primaryNav {
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+    border-bottom: 1px solid #e1e1e1;
+    transition: height 0.3s;
+  }
+  .logoAlfa {
+    width: 90px;
+    height: 80px;
+    display: block;
+    box-sizing: border-box;
+    background: url("https://www.alfaromeousa.com/css/../img/header/alfaromeo.png") center center no-repeat;
+    background-size: 60px;
+  }
+  .logoAlfa {
+    border-right: solid 1px #e1e1e1;
+  }
+  .callNav a.searchHeader:hover {
+    background-color: #363636;
+  }
+  .navigationLinks ul li a:hover {
+    background-color: #000;
+    color: #FFF;
+  }
+  .navigationLinks ul li.menuOpen a:hover {
+    background-color: #000;
+    color: #ffffff;
+  }
+  .callNav a.call span {
+    display: inherit;
+    border-right: none;
+  }
+  .callNav a.call {
+    background-color: #e1e1e1;
+    background-size: 18px;
+    background-position: center 15px;
+  }
+  .callNav a {
+    display: block;
+    float: left;
+    width: 90px;
+    height: 80px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #000;
+    font-family: 'robotoRegular';
+    font-size: 9px;
+    text-transform: uppercase;
+    padding-top: 46px;
+  }
+  .callNav a.build {
+    border-right: none;
+    background-size: 20px;
+  }
+  .callNav a:hover {
+    color: #000;
+    background-color: #efefef;
+  }
+  .callNav a.findDealer {
+    border-left: #e1e1e1 solid 1px;
+  }
+
+  /************************+++++++++++++++++++++++++++++++++++MEGAMENU+++++++++++++++++*******************************************/
+  .megamenuContainerWrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+  }
+  .sfondomegamenuContainer {
+    background: rgba(0, 0, 0, 0.8);
+    height: 1000px;
+  }
+  .megamenuContainer {
+    padding: 10px;
+    background: #FFF;
+    overflow: hidden;
+    position: relative;
+    border-top: solid 1px #e1e1e1;
+  }
+  /*VEHICLES*/
+  .megamenuUl li {
+    border-bottom: solid 1px #e1e1e1;
+    margin-right: 15px;
+  }
+  .megamenuUl li:last-child {
+    border-bottom: none;
+  }
+  .megamenuUl li a {
+    font-family: 'robotoregular';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 2px;
+    padding: 15px;
+    display: block;
+    transition: background-color, 0.3s, color, 0.3s;
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg");
+  }
+  .megamenuUl li a:hover {
+    background-color: #363636;
+    color: #FFF;
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right-small.svg");
+  }
+  .megamenuUl li.selected a {
+    background-color: #000;
+    color: #FFF;
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right-small.svg");
+  }
+  .megamenuUl li.menuOpen a:hover {
+    color: #000;
+    background-color: #efefef;
+  }
+  .megamenuUl li a.viewAll {
+    font-family: 'robotobold';
+    color: #8f0c25;
+  }
+  .megamenuUl li a.viewAll:hover {
+    color: #ffffff;
+  }
+  .imgSmallMegaMenu .imageWrapper {
+    padding: 15px;
+    background: #FFF;
+    position: relative;
+  }
+  .imgSmallMegaMenu .imageWrapper.img-only {
+    padding: 0;
+  }
+  .imgSmallMegaMenu .imageWrapper img {
+    width: 100%;
+    padding: 10px 0 40px 0;
+    transition: opacity, 0.3s;
+  }
+  .imgSmallMegaMenu .imageWrapper.img-only img {
+    padding: 0px 0 0px 0;
+  }
+  .imgSmallMegaMenu .imageWrapper img:hover {
+    opacity: 0.7;
+  }
+  .imageWrapper h3 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    margin: 0;
+    font-family: 'robotoregular';
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .imageWrapper.img-only h3 {
+    left: 30px;
+    top: 7px;
+  }
+  .imageWrapper.img-only a.discover {
+    top: 8px;
+    height: auto;
+  }
+  .imageWrapper a.discover {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    padding-right: 20px;
+    font-family: 'robotoregular';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") right center no-repeat;
+    background-size: 6px;
+  }
+  .carDataMegaMenu {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carDataMegaMenu p.etichetta {
+    font-size: 16px;
+    font-family: 'robotolight';
+    letter-spacing: 1px;
+  }
+  .carDataMegaMenu p.dato {
+    font-size: 18px;
+    font-family: 'robotobold';
+    letter-spacing: 1px;
+  }
+  .carDataMegaMenu .col-md-4 {
+    border-right: 1px solid #e1e1e1;
+    padding-left: 15px;
+  }
+  .carDataMegaMenu .col-md-4:last-child {
+    border-right: none;
+  }
+  .carDataMegaMenu .col-md-4:first-child {
+    padding-left: 10px;
+  }
+  .followUpMegamenu {
+    overflow: hidden;
+    margin: 20px 0 0 0;
+    padding: 20px 20px 10px;
+    border-top: 1px solid #e1e1e1;
+  }
+  .followUpMegamenu.img-only {
+    margin-top: 0;
+  }
+  .followUpMegamenu a {
+    display: block;
+    padding: 10px 0 10px 30px;
+    font-family: 'robotoregular';
+    font-size: 11px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .followUpMegamenu a.buildMega {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/build.svg");
+    background-size: 20px;
+  }
+  .followUpMegamenu a.testMega {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/testdrive.svg");
+    background-size: 25px;
+  }
+  .followUpMegamenu a.dealerMega {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/finddealer.svg");
+    background-size: 18px;
+  }
+  .allVehiclesPage .followUpMegamenu a.store {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/store.svg");
+    background-size: 25px;
+    background-position: left 1px;
+  }
+  .norelative {
+    position: initial;
+  }
+  a.imgWrapperMegaMenu {
+    display: block;
+    margin: 15px;
+    position: relative;
+    transition: opacity, 0.3s;
+  }
+  .imgWrapperMegaMenu img {
+    width: 100%;
+  }
+  .imgWrapperMegaMenu .contenutoText {
+    text-align: center;
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    width: 100%;
+  }
+  .imgWrapperMegaMenu .thTitle {
+    display: block;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    font-family: 'robotothin';
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .imgWrapperMegaMenu .discoverTh {
+    display: inline-block;
+    color: #FFF;
+    padding: 10px 20px 10px 0;
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") right center no-repeat;
+    background-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: 'robotoregular';
+    margin-top: 5px;
+  }
+  .historySlide.sliderContainer {
+    /*height:60%;*/
+  }
+  .historySlide.sliderContainer .carousel-indicators {
+    bottom: 10px;
+  }
+  .sliderContainer .carousel-control .glyphicon-chevron-left,
+  .sliderContainer .carousel-control .glyphicon-chevron-right,
+  .sliderContainer .carousel-control .icon-next,
+  .sliderContainer .carousel-control .icon-prev {
+    margin-top: 15px;
+  }
+  .imgWrapperMegaMenu:hover {
+    opacity: 0.7;
+  }
+  h1.blockTitle {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+  }
+  .veditutto {
+    text-align: right;
+    margin-bottom: -19px;
+  }
+  /************MODULO DA 3 SOTTO SLIDESHOW***********************************/
+  .modul3Row.container-fluid {
+    padding: 30px 40px;
+    background: #000000;
+  }
+  .modul3Row a.squareBanner {
+    border-bottom: none;
+  }
+  .modul3Row a.squareBanner img {
+    transition: opacity,0.3s;
+  }
+  .modul3Row a.squareBanner:hover img {
+    opacity: 0.7;
+  }
+  a.squareBanner span.textContainer span.titolo {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  a.squareBanner span.textContainer span.testo {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .modul3Row a.squareBanner span.textContainer {
+    display: block;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    right: 30px;
+  }
+  a.imgTextLink img,
+  a.videoLink img,
+  a.facebookLink img,
+  a.tumblrLink img {
+    transition: opacity,0.3s;
+  }
+  a.imgTextLink:hover img,
+  a.videoLink:hover img,
+  a.facebookLink:hover img,
+  a.instagramLink:hover img,
+  a.tumblrLink:hover img{
+    opacity: 0.7;
+  }
+  a.imgTextLink span.textContainer span.titolo {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  a.imgTextLink span.textContainer span.testo {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  a.imgTextLink span.textContainer {
+    display: block;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+    right: 30px;
+  }
+  a.videoLink:hover span.playVideo {
+    background-color: #FFF;
+  }
+  a.twitterLink:hover {
+    background: #e1e1e1;
+  }
+  span.titoloTasto {
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+  }
+
+  /****************SOCIALSTREAM TAB********************************/
+  .socialStreamTab {
+    padding: 25px;
+  }
+  /*********************FOLLOW LINE*****************************/
+  /**********************************************NEWS DESKTOP************************************************/
+  .filterBy {
+    overflow: hidden;
+    margin: 15px 0;
+  }
+  .filterBy form {
+    overflow: hidden;
+  }
+  .filterBy label {
+    display: block;
+    float: left;
+    font-family: 'robotoregular';
+    font-size: 11px;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: normal;
+    line-height: 37px;
+  }
+  .filterBy select {
+    border: none;
+    font-family: 'robotoregular';
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #FFF;
+    background: #000;
+    padding: 10px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    margin: 0;
+    width: 250px;
+    text-align: center;
+    height: 37px;
+    display: block;
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 15px;
+  }
+  .alfaRomeoWorldBlock .tabContainer .nav-pills > li > a:hover {
+    background: none;
+  }
+  .newsBlock {
+    margin-right: 1px;
+  }
+  .newsTab,
+  .tvTab {
+    background: #e1e1e1;
+    padding: 25px 25px 70px;
+  }
+  a.imgContainer {
+    display: block;
+  }
+  a.imgContainer span.playVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -33px;
+    margin-top: -33px;
+  }
+  a.imgContainer img {
+    width: 100%;
+    display: block;
+    transition: opacity, 0.3s;
+  }
+  a.imgContainer:hover img {
+    opacity: 0.7;
+  }
+  .newsTextContainer {
+    padding: 30px;
+    color: #000;
+    background: #FFF;
+  }
+  .primopiano .newsTextContainer p,
+  .tvTab .newsTextContainer p {
+    display: block;
+  }
+  .newsTextContainer p {
+    display: none;
+  }
+  p.dataNews {
+    margin-bottom: 10px;
+  }
+  .newsTextContainer p.dataNews {
+    display: block;
+  }
+  .primopiano .newsTextContainer {
+    background: #000;
+    color: #ffffff;
+  }
+  .newsTextContainer h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'robotoregular';
+    text-transform: none;
+    line-height: 25px;
+  }
+  .newsTextContainer a.readMore {
+    display: inline-block;
+    padding: 10px 20px 10px 0;
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") 95% center no-repeat;
+    background-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-family: robotoregular;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background, 0.3s;
+    position: absolute;
+    bottom: 40px;
+  }
+  .newsTextContainer a.readMore:hover {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") right center no-repeat;
+  }
+  .tabContainer ul.nav.nav-pills {
+    display: inline-block;
+    width: auto;
+  }
+  .primopiano .newsTextContainer a.readMore {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right-small.svg") 95% center no-repeat;
+  }
+  .primopiano .newsTextContainer a.readMore:hover {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right-small.svg") right center no-repeat;
+  }
+  .primopiano .newsTextContainer a.readMore {
+    color: #FFF;
+  }
+  .carousel-control {
+    z-index: 10;
+  }
+  .newsTab .carousel-control.left {
+    background-image: none;
+  }
+  .newsTab .carousel-control.right {
+    background-image: none;
+  }
+  .newsTab .carousel-control .glyphicon-chevron-left,
+  .newsTab .carousel-control .glyphicon-chevron-right,
+  .newsTab .carousel-control .icon-next,
+  .newsTab .carousel-control .icon-prev {
+    bottom: -50px;
+    top: auto;
+    margin-top: auto;
+  }
+  .newsTab .carousel-control .icon-prev {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/left.svg") center center no-repeat;
+    background-size: 12px;
+  }
+  .newsTab .carousel-control .icon-next {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right.svg") center center no-repeat;
+    background-size: 12px;
+  }
+  .newsTab .carousel-indicators {
+    bottom: -53px;
+  }
+  .newsTab .carousel-indicators .active {
+    background: #8f0c25;
+  }
+  .newsTab .carousel-indicators li {
+    border-color: #8f0c25;
+  }
+  .tvTab .carousel-control.left {
+    background-image: none;
+  }
+  .tvTab .carousel-control.right {
+    background-image: none;
+  }
+  .tvTab .carousel-control .glyphicon-chevron-left,
+  .tvTab .carousel-control .glyphicon-chevron-right,
+  .tvTab .carousel-control .icon-next,
+  .tvTab .carousel-control .icon-prev {
+    bottom: -50px;
+    top: auto;
+    margin-top: auto;
+  }
+  .tvTab .carousel-control .icon-prev {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/left.svg") center center no-repeat;
+    background-size: 12px;
+  }
+  .tvTab .carousel-control .icon-next {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right.svg") center center no-repeat;
+    background-size: 12px;
+  }
+  .tvTab .carousel-indicators {
+    bottom: -53px;
+  }
+  .tvTab .carousel-indicators .active {
+    background: #8f0c25;
+  }
+  .tvTab .carousel-indicators li {
+    border-color: #8f0c25;
+  }
+  .tabContainer .nav-pills > li > a {
+    border-radius: 0;
+    font-family: 'robotoregular';
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #cccccc;
+    margin: 0 10px;
+    width: 154px;
+    transition: border-color, 0.3s;
+  }
+  .body-canada-fr .tabContainer .nav-pills > li > a {
+    width: 164px;
+    letter-spacing: 1px;
+  }
+  .tabContainer .nav-pills > li {
+    width: inherit;
+  }
+  .newsPage .newsBlock .newsTextContainer h2 {
+    font-size: 14px;
+  }
+  /*******************FOLLOWUP FIXED******************************************************/
+  .followFixed {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -110px;
+    z-index: 10;
+  }
+  .followFixed > ul {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+  }
+  .followFixed ul > li {
+    display: block;
+    overflow: hidden;
+  }
+  .followFixed ul > li > a,
+  .followFixed ul > li > .testoShare {
+    display: block;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e1e1e1;
+    border-bottom: none;
+    float: right;
+    position: relative;
+    transition: background, 0.3s, color, 0.3s, width, 0.3s;
+  }
+  .followFixed ul > li:last-child a {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .followFixed ul > li:hover > a,
+  .followFixed ul > li:hover > .testoShare {
+    width: 250px;
+    background-color: #8f0c25;
+    color: #FFF;
+    border-color: #8f0c25;
+  }
+  /****FR HACK*****/
+  .body-canada-fr .followFixed ul > li:hover > a {
+    width: 410px;
+  }
+  .followFixed ul > li:hover > a span.testo,
+  .followFixed ul > li:hover > .testoShare span.testo {
+    opacity: 1;
+  }
+  .followFixed ul > li > a span.testo,
+  .followFixed ul > li > .testoShare span.testo {
+    font-family: 'robotoregular';
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 2px;
+    display: block;
+    padding: 0 50px 0 20px;
+    opacity: 0;
+    transition: opacity,0.3s;
+    font-size: 12px;
+  }
+  .followFixed ul > li > a span.icon,
+  .followFixed ul > li > .testoShare span.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .testoShare {
+    display: block;
+    overflow: hidden;
+  }
+  .followFixed ul li.inventory:hover a {
+    width: 260px;
+  }
+  .followFixed ul > li.build a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/build.svg");
+    background-size: 19px;
+  }
+  .followFixed ul > li.testdrive a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/testdrive.svg");
+    background-size: 24px;
+  }
+  .followFixed ul > li.inventory a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/inventory.svg");
+    background-size: 21px;
+  }
+  .followFixed ul > li.getaquote a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/getaquote.svg");
+    background-size: 21px;
+  }
+  .followFixed ul > li.findadealer a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/finddealer.svg");
+    background-size: 17px;
+  }
+  .followFixed ul > li.shareit span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/share.svg");
+    background-size: 18px;
+  }
+  .followFixed ul > li.getabrochure a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/brochure.svg");
+    background-size: 18px;
+  }
+  .followFixed ul > li.signup a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/updates.svg");
+    background-size: 22px;
+  }
+  .followFixed ul > li.store a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/store.svg");
+    background-size: 24px;
+  }
+  .followFixed ul > li.build:hover a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/build.svg");
+    background-size: 20px;
+  }
+  .followFixed ul > li.testdrive:hover a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/testdrive.svg");
+    background-size: 24px;
+  }
+  .followFixed ul > li.inventory:hover a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/inventory.svg");
+    background-size: 21px;
+    background-position: 17px 10px;
+  }
+  .followFixed ul > li.getaquote:hover a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/getaquote.svg");
+    background-size: 21px;
+  }
+  .followFixed ul > li.findadealer:hover a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/finddealer.svg");
+    background-size: 17px;
+  }
+  .followFixed ul > li.shareit:hover span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/share.svg");
+    background-size: 18px;
+  }
+  .followFixed ul > li.getabrochure:hover a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/brochure.svg");
+    background-size: 18px;
+  }
+  .followFixed ul > li.signup:hover a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/updates.svg");
+    background-size: 22px;
+  }
+  .followFixed ul > li.store:hover a span.icon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/store.svg");
+    background-size: 24px;
+  }
+  .testoShare a {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 1px 0;
+    display: block;
+    transition: opacity,0.3s;
+    opacity: 0.7;
+  }
+  .testoShare a:hover {
+    opacity: 1;
+  }
+  .testoShare a.facebookFollow {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/facebook.svg");
+    background-size: 8px;
+  }
+  .testoShare a.twitterFollow {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/twitter.svg");
+    background-size: 24px;
+  }
+  .testoShare a.pinterestFollow {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/pinterest.svg");
+    background-size: 18px;
+  }
+  .testoShare a.g {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/googleplus.svg");
+    background-size: 18px;
+  }
+  /**************************************SCHEDA**************************************************************/
+  .schedaImg .buttonAr {
+    font-size: 11px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 170px;
+  }
+  .submenuContainer {
+    position: relative;
+  }
+  .submenuContainer .submenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #efefef;
+    color: #000;
+    border-bottom: solid 1px #e1e1e1;
+    height: 80px;
+    overflow: hidden;
+  }
+  .submenuContainer .logoAlfa {
+    border-right: none;
+    float: left;
+    transition: margin-top 0.5s;
+    margin-top: 80px;
+  }
+  .submenuContainer .schedaDati {
+    float: left;
+    overflow: hidden;
+    margin-top: 19px;
+  }
+  .submenuContainer .schedaDati h2 {
+    font-family: 'robotobold';
+    letter-spacing: 0px;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  a.openDetails {
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #000;
+    font-family: 'robotolight';
+    padding: 0px 20px 0px 0;
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/nere/down.svg") right center no-repeat;
+    background-size: 10px;
+  }
+  .submenuContainer .schedaDati p {
+    font-size: 16px;
+    color: #000;
+    font-family: 'robotolight';
+  }
+  .submenuContainer .schedaDati p span {
+    font-family: 'robotobold';
+    font-size: 18px;
+  }
+  a.openDetails span {
+    font-family: 'robotobold';
+    font-size: 18px;
+  }
+  ul.subnav {
+    float: right;
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+  }
+  ul.subnav li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+  ul.subnav li a {
+    font-size: 11px;
+    color: #000;
+    display: block;
+    font-family: 'robotobold';
+    line-height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background, 0.3s, color, 0.5s;
+    position: relative;
+  }
+  ul.subnav li a:hover {
+    background: #e1e1e1;
+    color: #000000;
+  }
+  ul.subnav li.selected a:hover {
+    background: #efefef;
+    color: #000;
+  }
+  ul.subnav li a span {
+    display: block;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #8f0c25;
+    transition: left, 0.5s;
+  }
+  ul.subnav li.selected a span {
+    right: 0;
+  }
+  .submenuContainer.fixed .logoAlfa {
+    opacity: 1;
+    margin-top: 0;
+  }
+  .submenuContainer.fixed {
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    z-index: 20;
+    border-top: 1px solid #efefef;
+  }
+  .section.half {
+    padding: 25px;
+  }
+  .section.tech {
+    margin-top: 80px;
+  }
+  /*********************************PERFORMANCE********************************************/
+  .bgImageContainer {
+    position: relative;
+  }
+  .bgImageContainer .textContainer {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    right: 63%;
+  }
+  .bgImageContainer .techData {
+    position: absolute;
+    top: 40px;
+    left: 35%;
+    right: 60px;
+    bottom: 40px;
+    overflow: hidden;
+  }
+  .rowData {
+    overflow: hidden;
+    padding: 20px 0;
+    border-top: 1px solid #666666;
+  }
+  .rowData .colData {
+    float: left;
+    font-family: 'robotolight';
+    text-transform: uppercase;
+    color: #FFF;
+  }
+  .rowData .colData.type {
+    font-size: 16px;
+    width: 140px;
+    margin-top: 8px;
+  }
+  .rowData .colData.numbers {
+    font-size: 61px;
+    font-family: 'robotothin';
+    line-height: 61px;
+    clear: inherit;
+  }
+  .rowData .colData.others {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .footnote {
+    font-family: 'robotothin';
+    font-size:  12px;
+    margin-top: 8px;
+    text-transform: none;
+  }
+
+  .rowData .colData.numbers.space {
+    margin-left: 20px;
+    clear: inherit;
+  }
+  .section .textContainer h2 {
+    font-size: 30px;
+  }
+  .section .textContainer h2 sup {
+    font-size: 14px;
+    top: -14px;
+  }
+  .technicalData h2 {
+    font-size: 44px;
+  }
+
+  #titleSupStyle sup {
+    top: -0.8em;
+    font-size: 0.4em;
+  }
+  /*****************************************TECH SHEEET***************************************/
+  .section.technicalData {
+    padding: 100px 60px 30px 60px;
+    background: url("https://www.alfaromeousa.com/css/../img/scheda/4cspider/techSheet/bg-tech.jpg") center top no-repeat;
+  }
+  .techAccordion .rowData .colData {
+    text-transform: none;
+  }
+  .techAccordion .panel-title {
+    font-size: 18px;
+  }
+  .techAccordion .panel-title a {
+    display: block;
+  }
+  p.TechElenco {
+    font-family: robotothin;
+    font-size: 22px;
+    padding: 10px 0;
+    border-bottom: 1px solid #efefef;
+    text-align: left;
+  }
+  p.TechElenco:last-child {
+    border-bottom: none;
+  }
+  .buttonAr.download {
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    font-family: 'robotobold';
+    display: inline-block;
+  }
+  .panel-collapse h3 {
+    font-family: 'robotoregular';
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  p.asterisco {
+    font-size: 15px;
+    font-family: 'robotoregular';
+    margin-top: 20px;
+    text-align: left;
+  }
+  /******************************MENU MINIFICATO TOP*****************************************/
+  .minified .primaryNav {
+    height: 30px;
+  }
+  .minified .primaryNav .logoAlfa {
+    opacity: 0;
+  }
+  .minified .primaryNav .navigationLinks ul li a {
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+  .minified .primaryNav .navigationLinks ul li {
+    width: auto;
+    border-right: none;
+  }
+  .minified .primaryNav .callNav a.build {
+    display: none !important;
+  }
+  .minified .primaryNav .callNav a.call {
+    display: none !important;
+  }
+  .minified .primaryNav .callNav a.searchHeader {
+    width: 30px;
+    height: 30px;
+    padding-top: 0;
+  }
+  .minified .primaryNav .navigationLinks ul {
+    margin-left: -20px;
+  }
+  .minified .megamenuContainerWrapper {
+    top: 30px;
+  }
+  /******************************LEASE BLOCK*********************************************/
+  .lease .textContainer {
+    color: #FFF;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    right: 50%;
+    background: none;
+  }
+  .section .textContainer .leaseFor {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'robotolight';
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0px;
+  }
+  .leasePriceContainer {
+    overflow: hidden;
+  }
+  .section .textContainer .leasePriceContainer h2 {
+    float: left;
+    font-size: 55px;
+  }
+  .section .textContainer .leasePriceContainer .dollar {
+    display: block;
+    float: left;
+    font-family: 'robotothin';
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .section .textContainer .leasePriceContainer .detailPrice {
+    display: block;
+    float: left;
+    font-family: 'robotolight';
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 10px;
+  }
+  span.red {
+    color: #8f0c25;
+  }
+  .section.lease .textContainer p {
+    margin: 10px 0;
+  }
+  /*******************************GALLERY**************************************************/
+  .section.gallery {
+    padding: 60px;
+    background: #FFF;
+    text-align: center;
+  }
+  .section.gallery h2 {
+    font-size: 44px;
+  }
+  .section.gallery .tabContainer .nav-pills > li > a:hover {
+    background: none;
+  }
+  .section.gallery .row.tabContainer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  a.thGallery {
+    display: block;
+    margin-right: 1px;
+    transition: opacity,0.3s;
+    margin-bottom: 1px;
+  }
+  a.thGallery:hover {
+    opacity: 0.7;
+  }
+  /****************************************************************NEWS PAGE************************************************/
+  .newsPage {
+    background: #efefef;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .submenuContainer.newsSub {
+    margin-top: 80px;
+  }
+  .submenuContainer.newsSub h2 {
+    line-height: 80px;
+  }
+  .submenuContainer.newsSub .schedaDati {
+    margin-top: 0;
+  }
+  .submenuContainer.newsSub.fixed {
+    margin-top: 0;
+  }
+  ul.subnav li.selected a:hover {
+    cursor: default;
+  }
+  .newsPage h1 {
+    font-size: 50px;
+  }
+  .newsTextContainer {
+    height: 300px;
+  }
+  .tvTab .newsTextContainer {
+    height: 110px;
+  }
+  .tv .newsTextContainer {
+    height: 110px;
+  }
+  .newsPage .newsBlock {
+    margin-bottom: 30px;
+  }
+  .bottom .buttonFollowContainer {
+    border-top: 1px solid #e1e1e1;
+  }
+  /****************************************************************HISTORY************************************************/
+  .historyPage,
+  .performancePage,
+  .techPage {
+    margin-top: 80px;
+  }
+  .historyImgBg,
+  .performanceImgBg {
+    position: relative;
+    background: #000000;
+  }
+  .historyImgBg h1,
+  .performanceImgBg h1 {
+    font-size: 54px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .historyImgBg p,
+  .performanceImgBg p {
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .historyImgBg .textContainer,
+  .performanceImgBg .textContainer {
+    position: absolute;
+    top: 50%;
+    margin-top: 60px;
+    width: 100%;
+    padding: 0;
+  }
+  .submenuContainer.historySub h2 {
+    line-height: 80px;
+  }
+  .submenuContainer.historySub .schedaDati {
+    margin-top: 0;
+  }
+  .overviewIntro {
+    padding: 40px 15px;
+    background: #efefef;
+    text-align: center;
+  }
+  .year {
+    font-size: 32px;
+  }
+  .historyData {
+    width: auto;
+  }
+  p.historyIntro {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'robotoregular';
+    width: 560px;
+    margin: 0 auto 20px;
+  }
+  .section .textContainer {
+    padding: 30px;
+  }
+  .section.half.nospace {
+    padding: 0;
+  }
+  .historyImgBg.innovation .textContainer {
+    margin-top: -100px;
+  }
+  .historyImgBg.innovation .textContainer p {
+    margin: 20px auto;
+    width: 530px;
+  }
+  /***************************************DESIGNERS********************************************/
+  .designersPage h1 {
+    padding: 40px 15px;
+  }
+  .imgContainerDesigner {
+    position: relative;
+  }
+  .designersPage h1 {
+    padding: 40px 15px;
+    text-align: center;
+    background: #efefef;
+    font-size: 40px;
+    color: #000;
+    letter-spacing: 2px;
+  }
+  .imgContainerDesigner .textContainer {
+    color: #FFF;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    padding: 0;
+  }
+  .imgContainerDesigner .textContainer h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding: 10px 0;
+  }
+  .imgContainerDesigner .textContainer p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    font-family: 'robotoregular';
+  }
+  .imgContainerDesigner .textContainer p span.anno {
+    display: block;
+    font-family: 'robotobold';
+    float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: solid 1px #8f0c25;
+  }
+  .imgContainerDesigner .textContainer p span.testo {
+    float: left;
+  }
+  .designerData {
+    position: relative;
+    background: #000;
+    padding: 20px;
+  }
+  .designerData .imgContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .designerData .imgContainer img {
+    width: 100%;
+  }
+  .designerData .text {
+    font-family: 'robotoregular';
+    letter-spacing: 2px;
+    color: #FFF;
+    margin-right: 50px;
+  }
+  .designerData .text h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+  }
+  .designerData .text p {
+    padding-right: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .dx .designerData .imgContainer {
+    right: 0;
+    left: auto;
+  }
+  .dx .designerData .text {
+    margin-right: 0;
+    margin-left: 30px;
+    margin-right: 50px;
+    width: auto;
+  }
+  .designerBlock {
+    padding: 0px;
+  }
+  .designerBlock.border {
+    padding: 20px;
+  }
+  .border .imgContainerDesigner .textContainer {
+    color: #FFF;
+  }
+  .border .designerData {
+    background: #000;
+  }
+  .border .designerData .text {
+    color: #ffffff;
+  }
+  /************************************ALL VEHICLES******************************************/
+  .allVehiclesPage {
+    margin-top: 80px;
+    background: #efefef;
+    padding: 10px;
+  }
+  .allVehiclesPage h1 {
+    padding: 40px 15px;
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    letter-spacing: 2px;
+  }
+  .allVehiclesPage .imgSmallMegaMenu {
+    background: #FFF;
+    margin-bottom: 20px;
+    border-right: 20px solid #efefef;
+  }
+  .allVehiclesPage .followUpMegamenu {
+    border-top: 1px solid #efefef;
+    margin: 0 10px;
+    padding: 30px 10px;
+    background: none;
+  }
+  .allVehiclesPage .carDataMegaMenu {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .allVehiclesPage .carDataMegaMenu p.etichetta {
+    font-size: 14px;
+    font-family: 'robotoregular';
+    padding: 0;
+  }
+  .allVehiclesPage .carDataMegaMenu p.dato {
+    font-size: 18px;
+    font-family: 'robotobold';
+    letter-spacing: 1px;
+    padding: 0;
+  }
+  .allVehiclesPage .followUpMegamenu a {
+    display: block;
+    padding: 10px 0 10px 30px;
+    font-family: robotoregular;
+    font-size: 11px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .allVehiclesPage .carDataMegaMenu .col-xs-4 {
+    padding-left: 10px;
+  }
+  /****************************************PERFORMANCE***********************************************/
+  .performanceImgBg .textContainer {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    color: #ffffff;
+  }
+  .performancePage .overviewIntro .text {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .fullImageBg.section.textDx .textContainer h1 {
+    font-size: 40px;
+  }
+  .fullImageBg.section .textContainer {
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    background: none;
+  }
+  .fullImageBg.section.textDx .textContainer {
+    right: 0;
+  }
+  .fullImageBg.section.textSx .textContainer {
+    left: 0;
+  }
+  .fullImageBg.section.textCenter .textContainer {
+    right: 20%;
+    left: 20%;
+    text-align: center;
+    top: 50%;
+    margin-top: -12%;
+  }
+  /*************************************TECHNOLOGY*******************************************/
+  .submenuContainer.techSub h2 {
+    line-height: 80px;
+  }
+  .submenuContainer.techSub .schedaDati {
+    margin-top: 0;
+  }
+  /**************************************ALFISTI TV****************************************/
+  .newsBlock.tv span.playVideo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -33px;
+    margin-left: -33px;
+  }
+  /************************************COLORIZER PRESENTAZIONE*********************************/
+  .section.colorizer {
+    background: #FFF;
+    padding: 20px;
+  }
+  .section.colorizer .imgColContainer {
+    height: 631px;
+    overflow: hidden;
+    background: url("https://www.alfaromeousa.com/css/../img/scheda/4cspider/360-img.jpg") #000000 center center no-repeat;
+    position: relative;
+  }
+  .section.colorizer .imgColContainer.coupe {
+    background: url("https://www.alfaromeousa.com/css/../img/scheda/4cCoupe/360-img.jpg") #000000 center center no-repeat;
+  }
+  .section.colorizer .imgColContainer.coupel {
+    background: url("https://www.alfaromeousa.com/css/../img/scheda/4cCoupeL/360-img.jpg") #000000 center center no-repeat;
+  }
+  .textColorizer {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    color: #FFF;
+    text-align: center;
+  }
+  .textColorizer h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  .textColorizer .buttonAr.bianco {
+    background: none;
+    border: 1px solid #3E3E3E;
+    color: #FFF;
+  }
+  .section.colorizer .interface {
+    background: url("https://www.alfaromeousa.com/css/../img/scheda/4cspider/360-interface.jpg") center center no-repeat #ffffff;
+    height: 162px;
+  }
+  .section.colorizer .interface.coupe {
+    background: url("https://www.alfaromeousa.com/css/../img/scheda/4cCoupe/360-interface.jpg") center center no-repeat #ffffff;
+    height: 162px;
+  }
+  .section.colorizer .interface.coupel {
+    background: url("https://www.alfaromeousa.com/css/../img/scheda/4cCoupeL/360-interface.jpg") center center no-repeat #ffffff;
+    height: 162px;
+  }
+  .wcp-pan-wrapper .wcp-image {
+    background: #000000;
+  }
+  /***************************************OPTIONS*********************************************************************/
+  .section.options h2 {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+  .textContainer {
+    position: relative;
+  }
+  .detailedText {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+    margin-top: 0;
+    padding: 15px;
+    bottom: -40px;
+  }
+  .section.options.gallery {
+    padding: 60px;
+  }
+  .section .textContainer p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 20px;
+  }
+  .section .textContainer p span {
+    font-size: 12px;
+  }
+  .section .textContainer p.absolute {
+    font-size: 10px;
+  }
+  .optContainer .text {
+    height: 90px;
+  }
+  .optContainer .text p {
+    font-size: 13px;
+  }
+  a.details {
+    position: absolute;
+    bottom: 30px;
+  }
+  /****************STYLE MAKE*************************/
+  .intromake {
+    position: relative;
+  }
+  .primologo {
+    position: absolute;
+    top: 4%;
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+  }
+  .primologo img {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .primologo > h2 {
+    margin: 50px 35% 20px;
+  }
+  .primologo > p {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 35%;
+  }
+  .yearsStile {
+    overflow: hidden;
+    width: 50%;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .primologo .yearsStile img {
+    width: 60%;
+    display: inline-block;
+  }
+  .yearsStile p,
+  .yearsStile h2 {
+    text-align: left;
+    font-size: 35px;
+  }
+  .yearsStile p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .yearsStile h2 {
+    margin-bottom: 20px;
+  }
+  .textleft .yearsStile {
+    overflow: hidden;
+    width: 50%;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    color: #FFF;
+    margin-bottom: 0;
+  }
+  .textleft .yearsStile img {
+    width: 60%;
+    display: inline-block;
+  }
+  .textleft .yearsStile p,
+  .yearsStile h2 {
+    text-align: left;
+  }
+  /************************************footer********************************************/
+  .footerPrivacy {
+    background: #e1e1e1;
+  }
+  .inputContainer {
+    float: left;
+  }
+  form.country {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  form.country select {
+    display: inherit;
+    margin-bottom: 0;
+    width: 200px;
+    margin: 0 10px;
+  }
+  form.country input[type=submit] {
+    display: inherit;
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 0;
+  }
+  form.country input[type=submit]:hover {
+    background: #111111;
+  }
+  .privacyList li {
+    float: left;
+    margin-right: 20px;
+    text-align: left;
+  }
+  .privacyList li a {
+    display: block;
+  }
+  .footerLinks {
+    text-align: left;
+  }
+  ul.listaFooter li a {
+    transition: color, 0.3s;
+    color: #666666;
+  }
+  ul.listaFooter li a:hover {
+    color: #000;
+  }
+  .privacyList li a {
+    letter-spacing: 1px;
+  }
+  .footerPrivacy .legal {
+    letter-spacing: 1px;
+  }
+  .marginTop {
+    margin-top: 20px;
+  }
+  .row.linebotton {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .lineRight {
+    border-right: 1px solid #efefef;
+  }
+  .lineLeft {
+    border-left: 1px solid #efefef;
+  }
+  /********************************PRIVACY**************************************/
+  .privacyPage {
+    padding: 200px 120px 120px;
+    background: #FFF;
+    font-family: 'robotoregular';
+  }
+  .privacyPage p {
+    font-size: 17px;
+    line-height: 28px;
+    margin: 10px 0;
+  }
+  .privacyPage h1,
+  .privacyPage h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .privacyPage h3 {
+    margin-top: 60px;
+  }
+  /*******************************NEWS********************************************/
+  /******************************DEALER********************************************/
+  .searchDealerRow .inputContainer {
+    height: 32px;
+  }
+  .newsPage.dealerPage {
+    padding: 120px 70px 40px;
+  }
+  .dealerContainer .row {
+    border-right: 15px solid #e1e1e1;
+    box-sizing: border-box;
+  }
+  .dealerContainer .row:last-child {
+    border-bottom: 15px solid #e1e1e1;
+  }
+  .dealerData .etichetta {
+    float: none;
+    width: auto;
+    margin-top: 10px;
+  }
+  /*********************FLARE*********************/
+  .alfistiFlare .buttonAr {
+    float: left;
+    width: auto;
+  }
+  /****************WALLPAPERS*********************/
+  .alfistiFlare {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .alfistiFlare h1 {
+    text-align: left;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    line-height: 60px;
+  }
+  .alfistiFlare h2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'robotoregular';
+    line-height: 60px;
+  }
+  .flarePage {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #FFF;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+  .flareRow a {
+    display: block;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    transition: opacity, 0.3s;
+  }
+  .flareRow a:hover {
+    opacity: 0.5;
+  }
+  .flareRow a img {
+    display: block;
+    width: 100%;
+  }
+  .alfistiFlare .choose {
+    float: right;
+    text-align: center;
+  }
+  .alfistiFlare .choose p {
+    line-height: 60px;
+    font-size: 18px;
+  }
+  .imgBackBig {
+    margin-right: 1px;
+    margin-left: 0;
+  }
+  .thWall a {
+    display: block;
+    position: relative;
+    transition: opacity,0.3s;
+    margin-right: 1px;
+  }
+  .thWall a:hover {
+    opacity: 0.5;
+  }
+  .thWall a img {
+    display: block;
+    width: 100%;
+  }
+  .thWall a span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    background: #8f0c25;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity, 0.3s;
+  }
+  .thWall a.selected span {
+    opacity: 1;
+  }
+  .thWall a.selected:hover {
+    opacity: 1;
+    cursor: default;
+  }
+  .thWall .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .inputWall {
+    padding: 20px 0 0;
+  }
+  .inputWall label {
+    font-family: 'robotobold';
+    font-size: 11px;
+    padding: 0 5px;
+    text-transform: uppercase;
+  }
+  .inputWall select {
+    border: none;
+    font-family: 'robotoregular';
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #000;
+    background: #efefef;
+    padding: 10px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    height: 37px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  a.downloadWall {
+    display: block;
+    background-color: #8f0c25;
+    color: #FFF;
+    font-family: 'robotobold';
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/down.svg");
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+  }
+
+  /**************CANADA GENERICO********************/
+  .body-canada-en .fullImageBg.section.textCenter .textContainer h1 {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 992px) {
+  /***********************SLIDER*******************************************/
+  /*.sliderContainer{ height:95%}
+  .carousel,.item,.active {height: 100%;}
+  .carousel-inner {height: 100%;}*/
+  .fill {
+    width: 100%;
+    /*height: 100%;*/
+    background-position: bottom right;
+    background-size: 100%;
+  }
+  /*.fill .div-img {*/
+    /*width: auto !important;*/
+    /*height: 100% !important;*/
+  /*}*/
+  /**************************SLIDER NEW AL 100%*************************************/
+  .sliderContainer.homeTop {
+    height: 100%;
+    max-height: 800px;
+  }
+  .homeTop .carousel,
+  .item,
+  .active {
+    height: 100%;
+  }
+  .homeTop .carousel-inner {
+    height: 100%;
+  }
+  .homeTop .fill {
+    width: 100%;
+    height: auto;
+    /*height: 100%;*/
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .homeTop .fill.coupe {
+    background-position: 0% top;
+  }
+  .homeTop .fill.launch {
+    background-position: 69% 40px;
+  }
+  /*.homeTop .fill.video video {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*-webkit-transform: translateX(-50%) translateY(-50%);*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    /*background: url("https://www.alfaromeousa.com/css/polina.jpg") no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: right bottom;*/
+  /*}*/
+  .homeTop .carousel-caption.sxCaption {
+    top: 100px;
+    margin-top: auto;
+  }
+  .video-giorgio-wrapper .carousel-caption.sxCaption {
+    left: 90px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    right: 60%;
+    top: 270px;
+  }
+  .video-giorgio-wrapper .carousel-caption.sxCaption h3 {
+    font-size: 14px;
+  }
+  .gallery-black.homeTop .carousel-caption.sxCaption h2 {
+    font-size: 25px;
+  }
+  .gallery-black.homeTop .carousel-caption.sxCaption h3 {
+    font-size: 14px;
+    padding-left: 50px;
+    background: url("https://www.alfaromeousa.com/css/../img/slideshowHome/redline.jpg") left 9px no-repeat;
+  }
+  /***********************SLIDER test*******************************************/
+  .scrollDown {
+    font-size: 10px;
+    color: #FFF;
+    letter-spacing: 2px;
+    font-family: 'robotoregular';
+    bottom: 30px;
+    position: absolute;
+    text-align: center;
+    padding-top: 50px;
+    background: url("https://www.alfaromeousa.com/css/../img/scrollDown.png") center top no-repeat;
+    width: 100%;
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+  }
+  .showScrollTip .scrollDown {
+    display: block;
+  }
+  .scrollDown:hover {
+    color: #FFF;
+  }
+  .carousel-control {
+    width: 7%;
+  }
+  .carousel-caption {
+    position: absolute;
+    background: none;
+    bottom: inherit;
+    left: inherit;
+    right: inherit;
+    padding-bottom: 0px;
+    height: auto;
+    box-sizing: content-box;
+    width: auto;
+    padding-top: auto;
+    top: 50%;
+    margin-top: -14%;
+  }
+  .carousel-caption h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'robotoregular';
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  .carousel-caption h2 strong {
+    font-family: 'robotobold';
+    font-weight: normal;
+  }
+  .carousel-caption h3 {
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'robotoregular';
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    padding-left: 50px;
+    background: url("https://www.alfaromeousa.com/css/../img/slideshowHome/redline.jpg") left 9px no-repeat;
+  }
+  .carousel-control .icon-prev:before {
+    content: '';
+  }
+  .carousel-control .icon-next:before {
+    content: '';
+  }
+  .carousel-control .icon-prev {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/left.svg") center center no-repeat;
+    background-size: 20px;
+    width: 30px;
+    height: 30px;
+    /*margin-left: 10px;*/
+  }
+  .carousel-control .icon-next {
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right.svg") center center no-repeat;
+    background-size: 20px;
+    width: 30px;
+    height: 30px;
+    /*margin-right: 25px;*/
+    margin-right: 10px;
+  }
+  .buttonAr {
+    display: inline-block;
+    padding: 7px 20px;
+    font-family: 'robotoregular';
+    letter-spacing: 2px;
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-shadow: none;
+    margin: 10px 0;
+    transition: background, 0.3s, color, 0.3s;
+  }
+  .buttonAr.bianco {
+    background: #FFF;
+  }
+  .buttonAr.bianco:hover {
+    background: #111111;
+    color: #FFF;
+  }
+  .buttonAr.nero:hover {
+    background: #e1e1e1;
+    color: #000;
+  }
+  .carousel-indicators {
+    bottom: 0px;
+  }
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next,
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right {
+    bottom: auto;
+    top: 50%;
+    margin-top: -75px;
+  }
+  /**********CENTATURA VERTICALE SLIDER************************/
+  .centratura-verticale-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .centratura-verticale {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 100%;
+  }
+  .centratura-verticale .carousel-caption.centerJustifyCaption {
+    left: auto;
+    right: auto;
+    position: relative;
+    margin-top: auto;
+    top: auto;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .carousel-caption.centerJustifyCaption .buttonAr {
+    width: auto;
+  }
+  .carousel-caption {
+    z-index: 1;
+  }
+  .carousel-caption.sxCaption {
+    left: 80px;
+    text-align: left;
+  }
+  .carousel-caption.dxCaption.moreSpace {
+    margin-top: -75px;
+  }
+  .carousel-caption.dxCaption {
+    right: 100px;
+    left: auto;
+    width: 300px;
+    text-align: left;
+  }
+  .carousel-indicators li {
+    width: 80px;
+    border: none;
+    background: #CCC;
+    height: 3px;
+    margin: 1px 10px;
+  }
+  .carousel-indicators li.active {
+    width: 80px;
+    background: #8f0c25;
+    border: none;
+    height: 3px;
+    margin: 1px 10px;
+  }
+  /*.carousel-caption.dxCaption h3{ padding-left:0; padding-right:50px; background:url("https://www.alfaromeousa.com/css/../img/slideshowHome/redline.jpg") right 9px no-repeat}*/
+  .homeTop .carousel-caption .buttonAr {
+    display: inline-block;
+    width: 200px;
+    margin: 5px 0;
+  }
+  .carousel-caption h3 br {
+    display: inherit;
+  }
+  /*******************FOLLOW UP************************/
+  .carousel-indicators {
+    bottom: 0px;
+    z-index: 1;
+  }
+  .followUplineWrapper {
+    /*position:absolute; bottom:0;*/
+    width: 100%;
+  }
+  span.testoTasto {
+    display: none;
+  }
+  .buttonFollowContainer {
+    border-bottom: none;
+    transition: background, 0.3s;
+  }
+  .buttonFollowContainer:hover {
+    background: #e1e1e1;
+  }
+  .fill iframe {
+    width: 100%;
+    height: 100%;
+  }
+  /*CAROUSEL STORICO*/
+  /*************************SLIDER STORICO*******************************************/
+  .carousel-caption.centerJustifyCaption {
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    margin-top: -15%;
+  }
+  .carousel-caption.centerJustifyCaption h2 {
+    letter-spacing: 2px;
+    font-family: 'robotoregular';
+    font-size: 13px;
+  }
+  .carousel-caption.centerJustifyCaption h3 {
+    text-transform: none;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    padding: 0;
+    background: none;
+    font-family: 'robotoregular';
+  }
+  .carousel-caption.centerJustifyCaption h3 em {
+    font-size: 18px;
+  }
+  .carousel-caption.centerJustifyCaption h3 strong {
+    font-weight: normal!important;
+    font-family: 'robotobold';
+  }
+  .carousel-caption.centerJustifyCaption h3.centered {
+    text-align: center;
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .carousel-inner {
+    margin-top: 0px;
+  }
+  .carousel-caption.sxCaption {
+    top: 100px;
+    margin-top: auto;
+  }
+  .sliderContainer.homeTop .carousel-control {
+    top: 0px;
+  }
+  /*********************GIULIA**************************/
+  .carousel-caption.giuliaCaption {
+    width: 400px;
+  }
+  .giuliaTop .fill img {
+    margin-top: 30px;
+  }
+  .schedaDati.giulia h2 {
+    line-height: 41px;
+  }
+  .fill.relative {
+    position: relative;
+  }
+  .textTopGiulietta {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    text-align: right;
+    right: 60%;
+    padding: 0;
+  }
+  .textTopGiulietta h1 {
+    font-size: 100px;
+    position: relative;
+    letter-spacing: 4px;
+    font-family: 'robotolight';
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #efefef;
+    text-align: right;
+  }
+  .textTopGiulietta h1 span.text {
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 23px;
+    font-size: 28px;
+    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .textTopGiulietta h1 span.text span {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    height: 3px;
+    background: #8f0c25;
+    width: 60px;
+    display: block;
+  }
+  .textTopGiulietta p {
+    margin-right: 40px;
+    margin-top: 20px;
+    font-style: italic;
+  }
+  .textTopGiulietta p strong {
+    font-family: 'robotobold';
+    font-style: normal;
+    color: #000000;
+  }
+  .textContainer.textright {
+    text-align: right;
+  }
+  .imgSmallMegaMenu.img-only .imageWrapper img {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 30px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  body,
+  html,
+  .globalWrapper,
+  .sliderContainer.homeTop {
+    /*height: auto!important;*/
+  }
+  /* HEADER *************************************************************/
+  .megamenuContainerWrapper div.container-fluid {
+    display: none;
+  }
+  .megamenuContainerWrapper .depthMenu {
+    display: none;
+  }
+  .megamenuUl li a.active {
+    background-color: #363636;
+    color: #FFF;
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/right-small.svg");
+  }
+  .callNav a.lang-change {
+    padding-top: 46px;
+    background-size: 33px auto;
+    background-position: center 20px;
+  }
+  /* END HEADER *************************************************************/
+  .inputContainer {
+    margin: 0 10px;
+  }
+  form.country select,
+  form.country span.customSelect {
+    max-width: 400px;
+    min-width: 200px;
+  }
+  form.country select {
+    margin: 0;
+  }
+  form.country span.customSelect {
+    display: inherit;
+    margin-bottom: 0;
+    /*width:200px;*/
+    margin: 0 10px;
+  }
+  /* BLOCKS ***************************************************************/
+  h1.blockTitle {
+    /*padding: 40px 15px;
+	color: #000; font-size: 40px;
+	text-align: center; letter-spacing: 2px;
+	background: #efefef none repeat scroll 0 0;*/
+  }
+  .blocklist-row {
+    border-bottom: 1px solid #efefef;
+  }
+  .blocklist-row:last-child {
+    border-bottom: none;
+  }
+  .blocklist-row .blocklist-item {
+    border-right: 1px solid #efefef;
+    border-bottom: none;
+  }
+  .blocklist-row .blocklist-item:last-child {
+    border-right: none;
+    border-bottom: none;
+  }
+  .buttonAr.nero {
+    width: auto;
+  }
+  .testoShare a.pinterestFollow {
+    background-size: 14px;
+  }
+  .testoShare a.gplusFollow {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/bianche/googleplus.svg");
+    background-size: 21px auto;
+  }
+  /* END BLOCKS ***************************************************************/
+  /* VEHICLES *************************************************************/
+  h1.blockTitle {
+    text-transform: none;
+  }
+  .submenuContainer.fixed {
+    z-index: 19;
+  }
+  .section.colorizer .imgColContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background-size: auto 500px;
+    background-position: center 0px;
+  }
+  /*.colorizerWrapper {
+	height: 793px;
+}
+.section.colorizer .imgColContainer {
+	height: 100%;
+	background-size: cover;
+}*/
+  .detailedText {
+    bottom: 110px;
+    top: 0;
+    overflow: hidden;
+  }
+  /* PANORAMIC *********************/
+  #panoramic-interface {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+  }
+  .detailedText {
+    bottom: 110px;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-right: 1px solid #ffffff;
+  }
+  .detailedText p.prezzo {
+    color: #ffffff;
+  }
+  .detailedText .detailed-text-wrapper {
+    overflow: hidden;
+    position: relative;
+    /*padding-right:15px;*/
+    overflow-x: hidden!important;
+    width: 100%;
+    height: 100%;
+  }
+  .detailedText .detailed-text-wrapper p {
+    padding-right: 25px;
+  }
+  /* END VEHICLES *************************************************************/
+  /* NEWS *************************************************************/
+  .newsPage {
+    padding-top: 50px;
+  }
+  .filterBy select {
+    margin: 0;
+  }
+  /* END NEWS *************************************************************/
+  .video-giorgio-wrapper {
+    /*padding-top: 80px;*/
+  }
+  .primologo > h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    margin-bottom: 90px;
+  }
+
+  /* ALFASOUL **************************************************************/
+  .video-desc-wrapper .video-txt {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+  /* SHOPPINGT *************************************************************/
+  .dealer-loc-title {
+    font-size: 20px;
+  }
+  /* END SHOPPINGT *************************************************************/
+  /* MEGAMENU MODS ********************************************************/
+  a.imgWrapperMegaMenu {
+    cursor: default;
+  }
+  .imgWrapperMegaMenu:hover {
+    opacity: 1;
+  }
+  a.imgWrapperMegaMenu.discover-topleft {
+    cursor: pointer;
+  }
+  .imgWrapperMegaMenu.discover-topleft:hover {
+    opacity: 0.7;
+  }
+  .imageWrapper h3 a.discover {
+    display: inline-block;
+    clear: both;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-top: 10px;
+    color: #8f0c25;
+    font-family: "robotobold";
+    font-size: 12px;
+    /*background: rgba(0, 0, 0, 0) url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small_bold.svg") no-repeat scroll right center / 6px auto;*/
+  }
+  .imageWrapper.img-only h3 a.discover {
+    margin-top: 25px;
+  }
+  /* END MEGAMENU MODS ********************************************************/
+}
+/* END MEDIA */
+/*.imgWrapperMegaMenu.discover-topleft .contenutoText {
+	position: absolute; top:0; right: 0; display: inline-block;
+	width:auto;
+	position: absolute;	right: 50px; top: 20px; display: inline-block;
+	font-family: "robotoregular"; font-size: 11px; letter-spacing: 2px;
+	text-transform: uppercase;
+	background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small.svg") no-repeat scroll right center / 6px auto;
+}*/
+/* LESS Document */
+/*FOR LARGE DEVICE*/
+@media (min-width: 1200px) {
+  /****************************HEADER*********************************/
+  .navigationLinks ul li a {
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+  /****************FOLLOWUP**********************/
+  .buttonFollowContainer span.column,
+  .buttonFollowContainer span.IconColumn {
+    height: 80px;
+  }
+  span.testoTasto {
+    display: block;
+  }
+  .carousel-indicators {
+    bottom: 0px;
+    z-index: 1;
+  }
+  .imageWrapper h3 {
+    font-size: 16px;
+  }
+  .footerLinks {
+    padding: 20px 90px;
+  }
+  .footerBottomText {
+    padding: 20px 90px;
+  }
+  .footerPrivacy {
+    padding: 20px 90px;
+  }
+  .privacyList li a {
+    letter-spacing: 2px;
+  }
+  .footerPrivacy .legal {
+    letter-spacing: 2px;
+  }
+  .privacyList {
+    float: left;
+  }
+  .followFooter {
+    display: block;
+  }
+  .carousel-caption.centerJustifyCaption {
+    left: 20%;
+    right: 20%;
+    top: 50%;
+    margin-top: -15%;
+  }
+  a.squareBanner span.textContainer span.titolo {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+  a.squareBanner span.textContainer span.testo {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  a.imgTextLink span.textContainer span.titolo {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  a.imgTextLink span.textContainer span.testo {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  span.textTwitter .testo {
+    font-size: 16px;
+    display: block;
+  }
+  .carousel-caption h3 {
+    line-height: 20px;
+    font-size: 23px;
+    padding-left: 50px;
+  }
+  span.titoloTasto {
+    font-size: 14px;
+  }
+  span.iconTonda {
+    width: 46px;
+    height: 46px;
+    background-size: 24px;
+  }
+  span.iconTonda.buildIcon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/build.svg");
+  }
+  span.iconTonda.testDriveIcon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/testdrive.svg");
+    background-size: 30px;
+  }
+  span.iconTonda.searchInventoryIcon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/inventory.svg");
+    background-position: 13px 6px;
+  }
+  span.iconTonda.mailIcon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/getaquote.svg");
+  }
+  span.iconTonda.signUp {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/updates.svg");
+    background-size: 32px;
+  }
+  span.iconTonda.getBrochure {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/brochure.svg");
+    background-size: 26px;
+  }
+  span.iconTonda.findDealer {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/finddealer.svg");
+    background-size: 26px;
+  }
+  span.iconTonda.storeIcon {
+    background-image: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/store.svg");
+    background-size: 37px;
+  }
+  .carousel-caption.centerJustifyCaption h3 {
+    font-size: 31px;
+  }
+  .carousel-caption h3 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .section .textContainer h2 {
+    font-size: 40px;
+  }
+  .newsPage .newsBlock .newsTextContainer h2 {
+    font-size: 16px;
+  }
+  /*******************SCHEDA***************************************/
+  ul.subnav li a {
+    font-size: 12px;
+    color: #000;
+    display: block;
+    font-family: 'robotobold';
+    line-height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background, 0.5s;
+    position: relative;
+  }
+  ul.subnav {
+    float: right;
+    padding: 0;
+    margin: 0;
+    margin-right: 50px;
+  }
+  .carousel-caption.sxCaption {
+    left: 100px;
+    text-align: left;
+  }
+  .section .textContainer p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-right: 20px;
+  }
+  .section .textContainer {
+    padding: 50px;
+  }
+  p.TechElenco {
+    font-size: 33px;
+  }
+  .submenuContainer .schedaDati h2 {
+    font-family: 'robotobold';
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .carousel-caption h2 {
+    margin-bottom: 20px;
+  }
+  .carousel-caption h3 {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'robotoregular';
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    padding-left: 50px;
+    background: url("https://www.alfaromeousa.com/css/../img/slideshowHome/redline.jpg") left 9px no-repeat;
+  }
+  /******************NEWS******************************************/
+  .newsTextContainer {
+    height: 250px;
+  }
+  .tvTab .newsTextContainer {
+    height: 110px;
+  }
+  .tv .newsTextContainer {
+    height: 110px;
+  }
+  .homeTop .fill.launch {
+    background-position: center top;
+  }
+  /****GIULIA***********/
+  .video-giorgio-wrapper .carousel-caption.sxCaption {
+    left: 130px;
+    right: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 340px;
+  }
+  .gallery-black .carousel-caption.sxCaption {
+    left: 130px;
+    right: 60%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .yearsStile p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .homeTop .fill {
+    height: 100%;
+    width: auto;
+  }
+
+}
+
+@media (min-width: 1600px) {
+  .globalWrapper {
+    width: 1600px;
+    margin: 0 auto;
+  }
+  body {
+    background: #000000;
+  }
+  .primaryNavContainer {
+    width: 1600px;
+  }
+  .newsTextContainer {
+    height: 250px;
+  }
+  .tvTab .newsTextContainer {
+    height: 110px;
+  }
+  .homeTop .fill.coupe {
+    background-position: left -50px;
+  }
+  .homeTop .fill.launch {
+    background-position: right center;
+  }
+}
+@media (min-width: 1200px) {
+  /* NEWS *************************************************************/
+  /* END NEWS *************************************************************/
+}
+/* LESS Document */
+/************************************************************NAVIGATION************************************************************************/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .logoAlfa {
+    background: url("https://www.alfaromeousa.com/css/../img/retina/alfaromeo@2.png") center center no-repeat;
+    background-size: 40px;
+  }
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 27-apr-2015, 11.21.22
+    Author     : m.marsan
+*/
+/* LESS Document */
+@media (max-height: 768px) and (min-width: 992px) {
+  .section.colorizer .imgColContainer {
+    height: 440px;
+  }
+  .textColorizer {
+    top: 20px;
+  }
+  .section.colorizer .imgColContainer {
+    background-size: 100%;
+  }
+}
+/* LESS Document */
+@media (max-height: 768px) and (min-width: 992px) {
+  .section.colorizer .imgColContainer {
+    height: 100%;
+    background-position: center -20px;
+    background-size: auto 460px;
+  }
+  .wcp-pan-wrapper .wcp-image {
+    margin-top: -10%;
+  }
+  .wcp-loader-wrapper .wcp-loader {
+    margin-top: -25%;
+  }
+  #panoramic-interface {
+    /*height: 35%;*/
+    max-height: 170px;
+  }
+  .etichetteContainer {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  div.wcp-image img {
+    margin-left: auto;
+    /*left:10%; right:10%; width:80%; margin-top:4%*/
+  }
+  .contentTabContainer {
+    padding: 0;
+  }
+  /****RIPOSIZIONAMENTO SWITCH************/
+  .switchViewContainer {
+    text-align: left;
+    margin-left: 15px;
+    top: -39px;
+  }
+  .switchView {
+    border-top-left-radius: 0px;
+    padding-bottom: 0;
+    width: 205px;
+  }
+  .icon360 {
+    width: 14.7%;
+    margin-right: 0;
+  }
+  .switch {
+    width: 81%;
+  }
+  .switchView .switch .switchButton {
+    font-size: 10px;
+  }
+  .thContainer {
+    margin-bottom: 10px;
+  }
+  .spoilerTab .etichetteContainer {
+    margin-top: -10px;
+  }
+}
+
+.tiny-header-image{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.tiny-header-image img{
+    position: absolute;
+    top: -100px;
+}
+.flare-link{
+    /*border-bottom: 1px solid #e1e1e1;*/
+    /*margin-right: 30px;*/
+    background-image: url("https://www.alfaromeousa.com/img/svgIcon/rosse/right-small.svg");
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    color: #fff !important;
+    /*display: block;*/
+    font-family: "robotoregular";
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 30px 30px 30px 60px;
+    text-transform: uppercase;
+    position: absolute;
+    height: auto;
+    /*transition: background-color 0s ease 0s, all 0.3s ease 0s, color 0s ease 0s, all 0.3s ease 0s;*/
+}
+
+/*legal links fix fosition for tablet*/
+@media (min-width: 1200px){
+.legalList .visible-lg {
+    display: inherit !important;
+}
+}
+@media (min-width: 992px){
+.legalList .visible-md {
+    display: inherit !important;
+}
+}
+@media (max-width: 992px) {
+    .legalList, .privacyList {
+        float:none;
+    }
+}
+@media (min-width: 992px) {
+    .legalList
+    {
+        float: right;
+    }
+    .legalList a {text-transform: none !important;}
+}
+
+
+.giorgioCaption {
+  /*left: 90px !important;*/
+  padding: 15px !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  right: 60% !important;
+  /*top: 270px !important;*/
+}
+.giorgioCaption h2 {
+  font-size: 16px !important;
+}
+.giorgioCaption h3 {
+  font-size: 14px !important;
+}
+.giorgioCaption .buttonAr {
+  font-size: 12px !important;
+}
+
+
+/****************** CAROUSEL HACKS *************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #myCarousel{
+        max-height: 80% !important;
+
+    }
+    .sliderContainer.homeTop{
+        max-height: 80% !important;
+        height: auto;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #myCarousel{
+        height: 100% !important;
+    }
+    .sliderContainer.homeTop{
+        max-height: 80% !important;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .homeTop .fill.video video[poster] {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1200px) and (min-height: 800px)  {
+    .homeTop .fill.video video[poster] {
+        height: 100%;
+        width: auto;
+    }
+}
+
+
+
+@media (min-width: 1400px) {
+    .homeTop .fill.video video[poster] {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) and (min-height: 900px){
+    .homeTop .fill.video video[poster] {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 996px) and  (max-width: 1200px)  {
+    .homeTop .fill.video video[poster] {
+        height: auto;
+        width: 100%;
+    }
+}
+/***************************************** END ***************************/
+
+/************* all vihecles discover color ****************/
+.imageWrapper h3 a.discover-all{
+    color: #fff !important;
+    background: url("https://www.alfaromeousa.com/css/../img/svgIcon/rosse/right-small-white.png") right center no-repeat !important;
+}
+/*************************************/
